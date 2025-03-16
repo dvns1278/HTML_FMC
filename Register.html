@@ -546,34 +546,36 @@
       </div>
     </div>
     <img class="illustration" src="assets/illustration0.png" alt="Career illustration" />
-    <div class="icon">
-      <img class="arrow-right" src="assets/arrow-right0.svg" alt="Arrow icon" />
-    </div>
+    <a href="LandingPageNotYetSignUp.html">
+      <div class="icon">
+        <img class="arrow-right" src="assets/arrow-right0.svg" alt="Arrow icon" />
+      </div>
+    </a>
   </div>
-  
   <script>
     function checkFields() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
       const registerButton = document.getElementById('register-button');
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         registerButton.classList.add('active');
       } else {
         registerButton.classList.remove('active');
       }
     }
-    
+        
     document.getElementById('email').addEventListener('input', checkFields);
     document.getElementById('password').addEventListener('input', checkFields);
-    
+        
     document.getElementById('register-button').addEventListener('click', function() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         console.log('Register attempt with:', email);
-        alert('Register button clicked!');
+        // Replace the alert with navigation to LandingPageSignUp.html
+        window.location.href = "LandingPageSignUp.html";
       }
     });
   </script>

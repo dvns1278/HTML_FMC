@@ -532,9 +532,11 @@
     </div>
     <img class="logoo-1" src="assets/logoo-10.png" alt="FindMyCareer logo" />
     <img class="illustration" src="assets/illustration0.png" alt="Career illustration" />
+    <a href="LandingPageNotYetSignUp.html">
     <div class="icon">
       <img class="arrow-right" src="assets/arrow-right0.svg" alt="Arrow icon" />
     </div>
+  </a>
   </div>
   
   <script>
@@ -542,24 +544,24 @@
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
       const signInButton = document.getElementById('signin-button');
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         signInButton.classList.add('active');
       } else {
         signInButton.classList.remove('active');
       }
     }
-    
+        
     document.getElementById('email').addEventListener('input', checkFields);
     document.getElementById('password').addEventListener('input', checkFields);
-    
+        
     document.getElementById('signin-button').addEventListener('click', function() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         console.log('Sign in attempt with:', email);
-        alert('Sign in button clicked! In a real app, this would submit the form.');
+        window.location.href = "LandingPageSignUp.html"; 
       }
     });
   </script>
