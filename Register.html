@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindMyCareer Register</title>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+
+  .register,
+  .register * {
+    box-sizing: border-box;
+  }
+  .register {
+    background: #f0f2f8;
+    height: 885px;
+    position: relative;
+    overflow: hidden;
+  }
+  .form-rectangle {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 48px 30px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 440px;
+    height: 709px;
+    position: absolute;
+    left: 104px;
+    top: 65px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.08);
+  }
+  .onboard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 343px;
+    height: 66.38px;
+    position: relative;
+  }
+  .join-us {
+    color: #0077b6;
+    text-align: left;
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+  }
+  .fill-this-form-to-create-an-account {
+    color: #3f3f46;
+    text-align: left;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    position: relative;
+    align-self: stretch;
+  }
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 343px;
+    height: 73.76px;
+    position: relative;
+  }
+  .text {
+    color: #18181b;
+    text-align: left;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    position: relative;
+    align-self: stretch;
+  }
+  .input-form {
+    background: #ffffff;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #d2d6db;
+    border-width: 1px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .text2 {
+    color: #71717a;
+    text-align: left;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    position: relative;
+    flex: 1;
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 73.76px;
+    position: relative;
+  }
+  .input-field2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 343px;
+    position: relative;
+  }
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 276px;
+    position: relative;
+  }
+  .by-clicking-register-you-agree-to-find-my-career-terms-and-conditions {
+    color: #3f3f46;
+    text-align: center;
+    font-family: "-", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+  }
+  .by-clicking-register-you-agree-to-find-my-career-terms-and-conditions-span {
+    color: #3f3f46;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+  }
+  .by-clicking-register-you-agree-to-find-my-career-terms-and-conditions-span2 {
+    color: #3f3f46;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .button {
+    background: #ffffff;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #f3f4f6;
+    border-width: 1px;
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 343px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button.active {
+    background-color: #F4A261;
+  }
+  .button2 {
+    color: #d4d4d8;
+    text-align: left;
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .button.active .button2 {
+    color: #ffffff;
+  }
+  
+  /* Simple divider style without images */
+  .line {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 0 15px;
+    z-index: 2;
+  }
+  
+  .or {
+    color: #000000;
+    text-align: center;
+    font-family: "WorkSans-Regular", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  
+  .line-1, .line-2 {
+    flex: 1;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.3;
+    border: none;
+    margin: 0;
+  }
+  
+  .button-group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 343px;
+    position: relative;
+  }
+  .button-social, .button-social2 {
+    background: #ffffff;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d2d6db;
+    border-width: 1px;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  .icon-l, .icon-l2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .sign-in-with-google, .sign-in-with-apple {
+    color: #000000;
+    text-align: left;
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    position: relative;
+  }
+  .already-on-find-my-career-sign-in {
+    text-align: center;
+    font-family: "-", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    position: relative;
+    width: 343px;
+    height: 18.44px;
+  }
+  .already-on-find-my-career-sign-in-span {
+    color: #3f3f46;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+  }
+  .already-on-find-my-career-sign-in-span2 {
+    color: #0077b6;
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .vectors {
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 774px;
+  }
+  .logoo-2 {
+    width: 10.21%;
+    height: 148.22px;
+    position: absolute;
+    right: -0.14%;
+    left: 89.93%;
+    top: 1px;
+    object-fit: cover;
+    aspect-ratio: 147/148.22;
+  }
+  .headlines {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 539px;
+    position: absolute;
+    left: 604px;
+    top: 220px;
+  }
+  .join-find-my-career {
+    text-align: left;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+    height: 57px;
+  }
+  .join-find-my-career-span {
+    color: #18181b;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+  }
+  .join-find-my-career-span2 {
+    color: #f4a261;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+  }
+  .unlock-your-career-potential-with-smart-job-matching-and-skill-based-recommendations {
+    color: #18181b;
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    position: relative;
+    width: 539px;
+    height: 119px;
+  }
+  .illustration {
+    width: 552px;
+    height: 550px;
+    position: absolute;
+    left: 850px;
+    top: 271px;
+    object-fit: cover;
+  }
+  .icon {
+    width: 3.82%;
+    height: 6.21%;
+    position: absolute;
+    right: 89.86%;
+    left: 6.32%;
+    bottom: 84.63%;
+    top: -1%;
+  }
+  .arrow-right {
+    width: 50.2%;
+    height: 62.5%;
+    position: absolute;
+    right: 30%;
+    left: 19.79%;
+    bottom: -36.46%;
+    top: 73.96%;
+    transform: translate(-35.38px, -1px);
+  }
+  
+  /* Input styles for actual form inputs */
+  input {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: "Manrope-Medium", sans-serif;
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    color: #71717a;
+  }
+  </style>
+</head>
+<body>
+  <div class="register">
+    <div class="form-rectangle">
+      <div class="onboard-text">
+        <div class="join-us">Join us!</div>
+        <div class="fill-this-form-to-create-an-account">
+          Fill this form to create an account
+        </div>
+      </div>
+      <div class="input-field">
+        <div class="text">Email or phone number</div>
+        <div class="input-form">
+          <input type="text" id="email" placeholder="name@domain.com or phone number">
+        </div>
+      </div>
+      <div class="password">
+        <div class="input-field2">
+          <div class="text">Password</div>
+          <div class="input-form">
+            <input type="password" id="password" placeholder="your password">
+          </div>
+        </div>
+      </div>
+      <div class="button-group">
+        <div
+          class="by-clicking-register-you-agree-to-find-my-career-terms-and-conditions"
+        >
+          <span>
+            <span
+              class="by-clicking-register-you-agree-to-find-my-career-terms-and-conditions-span"
+            >
+              By clicking Register, you agree to FindMyCareer 
+            </span>
+            <span
+              class="by-clicking-register-you-agree-to-find-my-career-terms-and-conditions-span2"
+            >
+              Terms and Conditions.
+              <br />
+            </span>
+          </span>
+        </div>
+        <div class="button" id="register-button">
+          <div class="button2">Register</div>
+        </div>
+        <div class="line">
+          <div class="line-1"></div>
+          <div class="or-container">
+            <span class="or">or</span>
+          </div>
+          <div class="line-2"></div>
+        </div>
+        <div class="button-group2">
+          <div class="button-social">
+            <div class="icon-l">
+              <img class="super-g" src="assets/super-g0.svg" alt="Google icon" />
+            </div>
+            <div class="sign-in-with-google">Continue with Google</div>
+          </div>
+          <div class="button-social2">
+            <div class="icon-l2">
+              <img class="group" src="assets/group0.svg" alt="Apple icon" />
+            </div>
+            <div class="sign-in-with-apple">Continue with Apple</div>
+          </div>
+        </div>
+      </div>
+      <div class="already-on-find-my-career-sign-in">
+        <span>
+          <span class="already-on-find-my-career-sign-in-span">
+            Already on FindMyCareer ?
+          </span>
+          <span class="already-on-find-my-career-sign-in-span2">
+            <a href="SignIn.html"style="color: #0077B6;" >Sign In</a>
+          </span>
+        </span>
+      </div>
+    </div>
+    <img class="vectors" src="assets/vectors0.svg" alt="Background vector" />
+    <img class="logoo-2" src="assets/logoo-20.png" alt="FindMyCareer logo" />
+    <div class="headlines">
+      <div class="join-find-my-career">
+        <span>
+          <span class="join-find-my-career-span">Join</span>
+          <span class="join-find-my-career-span2">FindMyCareer.</span>
+        </span>
+      </div>
+      <div
+        class="unlock-your-career-potential-with-smart-job-matching-and-skill-based-recommendations"
+      >
+        Unlock your career potential with smart job matching and skill-based
+        recommendations.
+      </div>
+    </div>
+    <img class="illustration" src="assets/illustration0.png" alt="Career illustration" />
+    <div class="icon">
+      <img class="arrow-right" src="assets/arrow-right0.svg" alt="Arrow icon" />
+    </div>
+  </div>
+  
+  <script>
+    function checkFields() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const registerButton = document.getElementById('register-button');
+      
+      if (email.trim() !== '' && password.trim() !== '') {
+        registerButton.classList.add('active');
+      } else {
+        registerButton.classList.remove('active');
+      }
+    }
+    
+    document.getElementById('email').addEventListener('input', checkFields);
+    document.getElementById('password').addEventListener('input', checkFields);
+    
+    document.getElementById('register-button').addEventListener('click', function() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      if (email.trim() !== '' && password.trim() !== '') {
+        console.log('Register attempt with:', email);
+        alert('Register button clicked!');
+      }
+    });
+  </script>
+</body>
+</html>
