@@ -552,30 +552,30 @@
       </div>
     </a>
   </div>
-  
   <script>
     function checkFields() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
       const registerButton = document.getElementById('register-button');
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         registerButton.classList.add('active');
       } else {
         registerButton.classList.remove('active');
       }
     }
-    
+        
     document.getElementById('email').addEventListener('input', checkFields);
     document.getElementById('password').addEventListener('input', checkFields);
-    
+        
     document.getElementById('register-button').addEventListener('click', function() {
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      
+          
       if (email.trim() !== '' && password.trim() !== '') {
         console.log('Register attempt with:', email);
-        alert('Register button clicked!');
+        // Replace the alert with navigation to LandingPageSignUp.html
+        window.location.href = "LandingPageSignUp.html";
       }
     });
   </script>
