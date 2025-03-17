@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="./style.css">
   
   
@@ -33,11 +34,11 @@
        margin: 0;
        padding: 0;
    }
-   .my-profile,
-.my-profile * {
+   .my-profile-saved,
+.my-profile-saved * {
   box-sizing: border-box;
 }
-.my-profile {
+.my-profile-saved {
   height: 1729px;
   position: relative;
   overflow: hidden;
@@ -90,7 +91,7 @@
   left: 0px;
   top: 0px;
 }
-.my-profile2 {
+.my-profile {
   color: var(--black, #000000);
   text-align: left;
   font-family: var(--manrope-bold-28-font-family, "Manrope-Bold", sans-serif);
@@ -150,17 +151,61 @@
 .group-48096147 {
   flex-shrink: 0;
   width: 756px;
-  height: 40px;
+  height: 36px;
+  position: static;
+}
+.personal-information {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  right: 3.51%;
+  left: 0%;
+  width: 96.49%;
+  bottom: 95.62%;
+  top: 0%;
+  height: 4.38%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector2 {
+  flex-shrink: 0;
+  width: 773px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+}
+.group-48096148 {
+  flex-shrink: 0;
+  width: 783px;
+  height: 747px;
   position: static;
 }
 .button {
-  width: 154px;
-  height: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 125px;
+  height: 4.87%;
   position: absolute;
-  left: 602px;
-  top: 0px;
+  right: 8.5px;
+  bottom: 0%;
+  top: 95.13%;
 }
-.vector2 {
+.button2 {
+  flex-shrink: 0;
+  width: 126px;
+  height: 40px;
+  position: relative;
+}
+.vector3 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -193,106 +238,6 @@
   align-items: center;
   justify-content: center;
 }
-.personal-information {
-  color: var(--black, #000000);
-  text-align: left;
-  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
-  font-size: var(--manrope-bold-24-font-size, 24px);
-  line-height: var(--manrope-bold-24-line-height, 36px);
-  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
-  font-weight: var(--manrope-bold-24-font-weight, 700);
-  position: absolute;
-  right: 3.51%;
-  left: 0%;
-  width: 96.49%;
-  bottom: 95.39%;
-  top: 0.24%;
-  height: 4.36%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.vector3 {
-  flex-shrink: 0;
-  width: 773px;
-  height: 0px;
-  position: relative;
-  overflow: visible;
-}
-.group-48096148 {
-  flex-shrink: 0;
-  width: 783px;
-  height: 747px;
-  position: static;
-}
-.button2 {
-  display: flex;
-  flex-direction: row;
-  gap: 17px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 265px;
-  height: 4.85%;
-  position: absolute;
-  right: 9px;
-  bottom: 0%;
-  top: 95.15%;
-}
-.button3 {
-  flex-shrink: 0;
-  width: 126px;
-  height: 40px;
-  position: relative;
-}
-.vector4 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  overflow: visible;
-}
-.button4 {
-  flex-shrink: 0;
-  width: 122px;
-  height: 39px;
-  position: relative;
-}
-.vector5 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  overflow: visible;
-}
-.cancel {
-  color: var(--red-cta, #c51800);
-  text-align: center;
-  font-family: var(
-    --manrope-medium-14-font-family,
-    "Manrope-Medium",
-    sans-serif
-  );
-  font-size: var(--manrope-medium-14-font-size, 14px);
-  line-height: var(--manrope-medium-14-line-height, 24px);
-  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
-  font-weight: var(--manrope-medium-14-font-weight, 500);
-  position: absolute;
-  right: 25.82%;
-  left: 25.82%;
-  width: 48.36%;
-  bottom: 19.23%;
-  top: 19.23%;
-  height: 61.54%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .frame-48096199 {
   display: flex;
   flex-direction: row;
@@ -305,7 +250,7 @@
   width: 783px;
   position: absolute;
   left: 0px;
-  top: 78px;
+  top: 74px;
 }
 .name-form {
   display: flex;
@@ -331,7 +276,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector6 {
+.vector4 {
   flex-shrink: 0;
   width: 377px;
   height: 49px;
@@ -339,7 +284,7 @@
   overflow: visible;
 }
 .harry-potter {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  color: var(--typography-soft, #35485b);
   text-align: left;
   font-family: var(
     --manrope-medium-14-font-family,
@@ -385,15 +330,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector7 {
+.vector5 {
   flex-shrink: 0;
   width: 377px;
   height: 49px;
   position: relative;
   overflow: visible;
 }
-.name-email-com {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+.harrypot-10-gmail-com {
+  color: var(--typography-soft, #35485b);
   text-align: left;
   font-family: var(
     --manrope-medium-14-font-family,
@@ -405,12 +350,12 @@
   letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
   font-weight: var(--manrope-medium-14-font-weight, 500);
   position: absolute;
-  right: 61.56%;
-  left: 4.36%;
-  width: 129px;
-  bottom: 15.15%;
-  top: 55.76%;
-  height: 24.15px;
+  right: 54.03%;
+  left: 4.23%;
+  width: 158px;
+  bottom: 15.66%;
+  top: 55.42%;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -439,7 +384,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector8 {
+.vector6 {
   flex-shrink: 0;
   width: 377px;
   height: 49px;
@@ -447,7 +392,7 @@
   overflow: visible;
 }
 ._0822 {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  color: var(--typography-soft, #35485b);
   text-align: left;
   font-family: var(
     --manrope-medium-14-font-family,
@@ -493,14 +438,14 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector9 {
+.vector7 {
   flex-shrink: 0;
   width: 377px;
   height: 49px;
   position: relative;
   overflow: visible;
 }
-.vector10 {
+.vector8 {
   flex-shrink: 0;
   width: 2.61%;
   height: 5.44%;
@@ -511,8 +456,8 @@
   top: 68.21%;
   overflow: visible;
 }
-.choose-your-preferred-job-location {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+.london {
+  color: var(--typography-soft, #35485b);
   text-align: left;
   font-family: var(
     --manrope-medium-14-font-family,
@@ -558,14 +503,14 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector11 {
+.vector9 {
   align-self: stretch;
   flex-shrink: 0;
   height: 49px;
   position: relative;
   overflow: visible;
 }
-.vector12 {
+.vector10 {
   flex-shrink: 0;
   width: 1.27%;
   height: 5.58%;
@@ -600,14 +545,14 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector13 {
+.vector11 {
   flex-shrink: 0;
   width: 779px;
   height: 49px;
   position: relative;
   overflow: visible;
 }
-.vector14 {
+.vector12 {
   flex-shrink: 0;
   width: 1.49%;
   height: 14.49%;
@@ -618,7 +563,7 @@
   top: 62.94%;
   overflow: visible;
 }
-.vector15 {
+.vector13 {
   flex-shrink: 0;
   width: 0%;
   height: 28.57%;
@@ -629,7 +574,7 @@
   top: 55.9%;
   overflow: visible;
 }
-.vector16 {
+.vector14 {
   flex-shrink: 0;
   width: 1.52%;
   height: 6.61%;
@@ -642,13 +587,13 @@
 }
 .categories {
   flex-shrink: 0;
-  width: 184px;
-  height: 28.17px;
+  width: 80px;
+  height: 28px;
   position: absolute;
-  left: 131.5px;
-  top: 43.27px;
+  left: 14px;
+  top: 43px;
 }
-.vector17 {
+.vector15 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -658,18 +603,8 @@
   top: 0%;
   overflow: visible;
 }
-.vector18 {
-  width: 6.34%;
-  height: 41.66%;
-  position: absolute;
-  right: 5.07%;
-  left: 88.59%;
-  bottom: 33.34%;
-  top: 25%;
-  overflow: visible;
-}
-.front-end-development {
-  color: var(--typography-soft, #35485b);
+.ui-designer {
+  color: #ffffff;
   text-align: center;
   font-family: var(
     --manrope-medium-12-font-family,
@@ -679,25 +614,25 @@
   font-size: var(--manrope-medium-12-font-size, 12px);
   font-weight: var(--manrope-medium-12-font-weight, 500);
   position: absolute;
-  right: 19.02%;
-  left: 5.43%;
-  width: 75.54%;
-  bottom: 22.86%;
-  top: 20.35%;
-  height: 56.79%;
+  right: 8.75%;
+  left: 8.75%;
+  width: 82.5%;
+  bottom: 21.43%;
+  top: 21.43%;
+  height: 57.14%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .categories2 {
   flex-shrink: 0;
-  width: 112px;
-  height: 28.17px;
+  width: 177px;
+  height: 28px;
   position: absolute;
-  left: 11.5px;
-  top: 42.76px;
+  left: 111px;
+  top: 43px;
 }
-.vector19 {
+.vector16 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -706,37 +641,6 @@
   bottom: 0%;
   top: 0%;
   overflow: visible;
-}
-.vector20 {
-  width: 10.42%;
-  height: 41.66%;
-  position: absolute;
-  right: 10.86%;
-  left: 78.72%;
-  bottom: 29.17%;
-  top: 29.17%;
-  overflow: visible;
-}
-.ui-designer {
-  color: var(--typography-soft, #35485b);
-  text-align: center;
-  font-family: var(
-    --manrope-medium-12-font-family,
-    "Manrope-Medium",
-    sans-serif
-  );
-  font-size: var(--manrope-medium-12-font-size, 12px);
-  font-weight: var(--manrope-medium-12-font-weight, 500);
-  position: absolute;
-  right: 32.14%;
-  left: 7.14%;
-  width: 60.71%;
-  bottom: 21.08%;
-  top: 22.13%;
-  height: 56.79%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .biography-form {
   display: flex;
@@ -762,33 +666,15 @@
   align-items: center;
   justify-content: flex-start;
 }
-.vector21 {
+.vector17 {
   flex-shrink: 0;
   width: 779px;
   height: 187px;
   position: relative;
   overflow: visible;
 }
-.write-a-brief-summary-about-your-skills-passion-and-career-aspirations-a-strong-profile-increases-your-chances-of-getting-hired {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
-  text-align: left;
-  font-family: var(
-    --manrope-medium-14-font-family,
-    "Manrope-Medium",
-    sans-serif
-  );
-  font-size: var(--manrope-medium-14-font-size, 14px);
-  line-height: var(--manrope-medium-14-line-height, 24px);
-  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
-  font-weight: var(--manrope-medium-14-font-weight, 500);
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.tell-us-about-yourself {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+.i-am-currently-interested-in-ui-ux-design-and-have-some-of-experience {
+  color: var(--typography-soft, #35485b);
   text-align: left;
   font-family: var(
     --manrope-medium-14-font-family,
@@ -800,12 +686,12 @@
   letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
   font-weight: var(--manrope-medium-14-font-weight, 500);
   position: absolute;
-  right: 78.17%;
-  left: 1.86%;
-  width: 156px;
-  bottom: 74.36%;
-  top: 16.85%;
-  height: 24px;
+  right: 1.66%;
+  left: 1.66%;
+  width: 755px;
+  bottom: 68.73%;
+  top: 22.48%;
+  height: 19.16px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -864,7 +750,7 @@
   height: 42.45px;
   position: relative;
 }
-.vector22 {
+.vector18 {
   width: 99.49%;
   height: 0%;
   position: absolute;
@@ -874,7 +760,7 @@
   top: 70.87%;
   overflow: visible;
 }
-.vector23 {
+.vector19 {
   width: 59.39%;
   height: 6.06%;
   position: absolute;
@@ -884,7 +770,7 @@
   top: 66.67%;
   overflow: visible;
 }
-.vector24 {
+.vector20 {
   opacity: 0.12;
   width: 10.15%;
   height: 60.61%;
@@ -895,7 +781,7 @@
   top: 39.39%;
   overflow: visible;
 }
-.vector25 {
+.vector21 {
   width: 5.08%;
   height: 30.3%;
   position: absolute;
@@ -905,7 +791,7 @@
   top: 54.54%;
   overflow: visible;
 }
-.vector26 {
+.vector22 {
   width: 9.36%;
   height: 44.09%;
   position: absolute;
@@ -915,7 +801,7 @@
   top: 0%;
   overflow: visible;
 }
-.vector27 {
+.vector23 {
   width: 4.39%;
   height: 9.74%;
   position: absolute;
@@ -1078,7 +964,7 @@
   top: 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.vector28 {
+.vector24 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1088,7 +974,7 @@
   top: 0%;
   overflow: visible;
 }
-.vector29 {
+.vector25 {
   width: 12.66%;
   height: 0%;
   position: absolute;
@@ -1098,7 +984,7 @@
   top: 50%;
   overflow: visible;
 }
-.vector30 {
+.vector26 {
   width: 0%;
   height: 35.71%;
   position: absolute;
@@ -1129,6 +1015,21 @@
   align-items: center;
   justify-content: center;
 }
+.view-more {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  left: 110px;
+  top: 413px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .online-presence-list {
   display: flex;
   flex-direction: column;
@@ -1138,7 +1039,7 @@
   width: 270px;
   position: absolute;
   left: 16px;
-  top: 62px;
+  top: 65px;
 }
 .dribble {
   display: flex;
@@ -1149,7 +1050,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.vector31 {
+.vector27 {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -1184,88 +1085,6 @@
   top: 8px;
   overflow: visible;
 }
-.link-form {
-  padding: 6px 11px 6px 11px;
-  display: flex;
-  flex-direction: row;
-  gap: 78px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 36px;
-  position: relative;
-}
-.group4 {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  overflow: visible;
-}
-.harrypot-10 {
-  color: var(--input-typography, rgba(0, 0, 0, 0.6));
-  text-align: center;
-  font-family: var(
-    --manrope-medium-14-font-family,
-    "Manrope-Medium",
-    sans-serif
-  );
-  font-size: var(--manrope-medium-14-font-size, 14px);
-  line-height: var(--manrope-medium-14-line-height, 24px);
-  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
-  font-weight: var(--manrope-medium-14-font-weight, 500);
-  position: relative;
-  width: 89px;
-  height: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.frame-48096198 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.submit {
-  color: var(--primary, #0077b6);
-  text-align: center;
-  font-family: var(
-    --manrope-medium-12-font-family,
-    "Manrope-Medium",
-    sans-serif
-  );
-  font-size: var(--manrope-medium-12-font-size, 12px);
-  font-weight: var(--manrope-medium-12-font-weight, 500);
-  position: relative;
-  width: 48px;
-  height: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.vector32 {
-  flex-shrink: 0;
-  width: 0px;
-  height: 23px;
-  position: relative;
-  overflow: visible;
-}
-.vector33 {
-  flex-shrink: 0;
-  width: 11.67px;
-  height: 11.67px;
-  position: relative;
-  overflow: visible;
-}
 .behance {
   display: flex;
   flex-direction: row;
@@ -1282,7 +1101,7 @@
   height: 40px;
   position: relative;
 }
-.vector34 {
+.vector28 {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -1316,7 +1135,7 @@
   top: 11px;
   overflow: visible;
 }
-.harrypot-102 {
+.harrypot-10 {
   color: var(--input-typography, rgba(0, 0, 0, 0.6));
   text-align: center;
   font-family: var(
@@ -1351,7 +1170,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.vector35 {
+.vector29 {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -1386,13 +1205,13 @@
   top: 8px;
   overflow: visible;
 }
-.button5 {
+.button3 {
   flex-shrink: 0;
   width: 72px;
   height: 23px;
   position: relative;
 }
-.vector36 {
+.vector30 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1441,7 +1260,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.vector37 {
+.vector31 {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -1467,7 +1286,7 @@
   align-items: center;
   justify-content: center;
 }
-.vector38 {
+.vector32 {
   flex-shrink: 0;
   width: 23.03%;
   height: 48%;
@@ -1478,7 +1297,7 @@
   top: 26%;
   overflow: visible;
 }
-.vector39 {
+.vector33 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1506,7 +1325,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.vector40 {
+.vector34 {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -1532,7 +1351,7 @@
   align-items: center;
   justify-content: center;
 }
-.vector41 {
+.vector35 {
   flex-shrink: 0;
   width: 18.87%;
   height: 50%;
@@ -1543,7 +1362,7 @@
   top: 25%;
   overflow: visible;
 }
-.vector42 {
+.vector36 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1571,7 +1390,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.vector43 {
+.vector37 {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
@@ -1606,7 +1425,7 @@
   top: 8px;
   overflow: visible;
 }
-.vector44 {
+.vector38 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1615,21 +1434,6 @@
   bottom: 0%;
   top: 0%;
   overflow: visible;
-}
-.view-more {
-  color: var(--primary, #0077b6);
-  text-align: left;
-  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
-  font-size: var(--manrope-bold-14-font-size, 14px);
-  line-height: var(--manrope-bold-14-line-height, 24px);
-  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
-  font-weight: var(--manrope-bold-14-font-weight, 700);
-  position: absolute;
-  left: 110px;
-  top: 448px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 .breadcrumb {
   background: var(--gray-50, #f1f2f4);
@@ -2188,12 +1992,12 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="my-profile">
-    <img class="clip-path-group" src="myprofile/clip-path-group0.svg" />
+  <div class="my-profile-saved">
+    <img class="clip-path-group" src="myprofilesaved/clip-path-group0.svg" />
     <div class="no-experience">No experience</div>
     <div class="profile">
       <div class="headline">
-        <div class="my-profile2">My Profile</div>
+        <div class="my-profile">My Profile</div>
         <div
           class="complete-your-profile-to-increase-your-visibility-to-potential-employers-upload-your-photo-add-your-experience-and-set-your-job-preferences-to-get-started"
         >
@@ -2202,107 +2006,93 @@
           preferences to get started!
         </div>
       </div>
-      <img class="vector" src="myprofile/vector0.svg" />
+      <img class="vector" src="myprofilesaved/vector0.svg" />
       <div class="frame-48096201">
         <div class="group-48096147">
-          <div class="button">
-            <img class="vector2" src="myprofile/vector1.svg" />
-            <div class="update">Upload CV</div>
-          </div>
           <div class="personal-information">Personal Information</div>
         </div>
-        <img class="vector3" src="myprofile/vector2.svg" />
+        <img class="vector2" src="myprofilesaved/vector1.svg" />
         <div class="group-48096148">
-          <div class="button2">
-            <div class="button3">
-              <img class="vector4" src="myprofile/vector3.svg" />
-              <div class="update"><a href="MyProfileSaved.html" style="color: #f0f0f0;">Update</a></div>
-            </div>
-            <div class="button4">
-              <img class="vector5" src="myprofile/vector4.svg" />
-              <div class="cancel"><a href="LandingPageSignUp.html" style="color: #C51800;">Cancel</a></div>
+          <div class="button">
+            <div class="button2">
+              <img class="vector3" src="myprofilesaved/vector2.svg" />
+              <div class="update"><a href="MyProfile.html" style="color: #f0f0f0;">Edit</a></div>
             </div>
           </div>
           <div class="frame-48096199">
             <div class="name-form">
               <div class="full-name">Full Name</div>
-              <img class="vector6" src="myprofile/vector5.svg" />
+              <img class="vector4" src="myprofilesaved/vector3.svg" />
               <div class="harry-potter">Harry Potter</div>
             </div>
             <div class="email-form">
               <div class="email">Email</div>
-              <img class="vector7" src="myprofile/vector6.svg" />
-              <div class="name-email-com">name@email.com</div>
+              <img class="vector5" src="myprofilesaved/vector4.svg" />
+              <div class="harrypot-10-gmail-com">harrypot10@gmail.com</div>
             </div>
             <div class="phone-number-form">
               <div class="phone-number">Phone Number</div>
-              <img class="vector8" src="myprofile/vector7.svg" />
+              <img class="vector6" src="myprofilesaved/vector5.svg" />
               <div class="_0822">0822************</div>
             </div>
             <div class="location-form">
               <div class="location">Location</div>
-              <img class="vector9" src="myprofile/vector8.svg" />
-              <img class="vector10" src="myprofile/vector9.svg" />
-              <div class="choose-your-preferred-job-location">
-                Choose your preferred job location
-              </div>
+              <img class="vector7" src="myprofilesaved/vector6.svg" />
+              <img class="vector8" src="myprofilesaved/vector7.svg" />
+              <div class="london">London</div>
             </div>
             <div class="experience-form">
               <div class="experience">Experience</div>
-              <img class="vector11" src="myprofile/vector10.svg" />
-              <img class="vector12" src="myprofile/vector11.svg" />
+              <img class="vector9" src="myprofilesaved/vector8.svg" />
+              <img class="vector10" src="myprofilesaved/vector9.svg" />
             </div>
             <div class="categories-form">
               <div class="job-categories">Job Categories</div>
-              <img class="vector13" src="myprofile/vector12.svg" />
-              <img class="vector14" src="myprofile/vector13.svg" />
-              <img class="vector15" src="myprofile/vector14.svg" />
-              <img class="vector16" src="myprofile/vector15.svg" />
+              <img class="vector11" src="myprofilesaved/vector10.svg" />
+              <img class="vector12" src="myprofilesaved/vector11.svg" />
+              <img class="vector13" src="myprofilesaved/vector12.svg" />
+              <img class="vector14" src="myprofilesaved/vector13.svg" />
               <div class="categories">
-                <img class="vector17" src="myprofile/vector16.svg" />
-                <img class="vector18" src="myprofile/vector17.svg" />
-                <div class="front-end-development">Front-End Development</div>
+                <img class="vector15" src="myprofilesaved/vector14.svg" />
+                <div class="ui-designer">UI Designer</div>
               </div>
               <div class="categories2">
-                <img class="vector19" src="myprofile/vector18.svg" />
-                <img class="vector20" src="myprofile/vector19.svg" />
-                <div class="ui-designer">UI Designer</div>
+                <img class="vector16" src="myprofilesaved/vector15.svg" />
+                <div class="ui-designer">Front-End Development</div>
               </div>
             </div>
             <div class="biography-form">
               <div class="bio">Bio</div>
-              <img class="vector21" src="myprofile/vector20.svg" />
+              <img class="vector17" src="myprofilesaved/vector16.svg" />
               <div
-                class="write-a-brief-summary-about-your-skills-passion-and-career-aspirations-a-strong-profile-increases-your-chances-of-getting-hired"
+                class="i-am-currently-interested-in-ui-ux-design-and-have-some-of-experience"
               >
-                Write a brief summary about your skills, passion, and career
-                aspirations. A strong profile increases your chances of getting
-                hired!
+                I am currently interested in UI/UX Design and have some of
+                experience.
               </div>
-              <div class="tell-us-about-yourself">Tell us about yourself!</div>
             </div>
           </div>
         </div>
       </div>
       <div class="complete-profile-box">
-        <img class="group" src="myprofile/group0.svg" />
+        <img class="group" src="myprofilesaved/group0.svg" />
         <div class="complete-profile">
           <div class="complete-profile2">Complete Profile</div>
           <div class="progres-bar">
-            <img class="vector22" src="myprofile/vector21.svg" />
-            <img class="vector23" src="myprofile/vector22.svg" />
-            <img class="vector24" src="myprofile/vector23.svg" />
-            <img class="vector25" src="myprofile/vector24.svg" />
-            <img class="vector26" src="myprofile/vector25.svg" />
-            <img class="vector27" src="myprofile/vector26.svg" />
+            <img class="vector18" src="myprofilesaved/vector17.svg" />
+            <img class="vector19" src="myprofilesaved/vector18.svg" />
+            <img class="vector20" src="myprofilesaved/vector19.svg" />
+            <img class="vector21" src="myprofilesaved/vector20.svg" />
+            <img class="vector22" src="myprofilesaved/vector21.svg" />
+            <img class="vector23" src="myprofilesaved/vector22.svg" />
             <div class="_75">75%</div>
           </div>
         </div>
       </div>
       <div class="profile-box">
-        <img class="group2" src="myprofile/group1.svg" />
+        <img class="group2" src="myprofilesaved/group1.svg" />
         <div class="frame-48096200">
-          <img class="profile2" src="myprofile/profile1.svg" />
+          <img class="profile2" src="myprofilesaved/profile1.svg" />
           <div class="name">
             <div class="harry-potter2">Harry Potter</div>
             <div class="ui-ux-designer-developer">UI/UX Designer / Developer</div>
@@ -2310,96 +2100,87 @@
         </div>
       </div>
       <div class="online-presence-box2">
-        <img class="group3" src="myprofile/group2.svg" />
+        <img class="group3" src="myprofilesaved/group2.svg" />
         <div class="online-presence">Online Presence</div>
         <div class="component-1">
-          <img class="vector28" src="myprofile/vector27.svg" />
-          <img class="vector29" src="myprofile/vector28.svg" />
-          <img class="vector30" src="myprofile/vector29.svg" />
+          <img class="vector24" src="myprofilesaved/vector23.svg" />
+          <img class="vector25" src="myprofilesaved/vector24.svg" />
+          <img class="vector26" src="myprofilesaved/vector25.svg" />
           <div class="add-link">Add link</div>
         </div>
+        <div class="view-more">View more</div>
         <div class="online-presence-list">
           <div class="dribble">
-            <img class="vector31" src="myprofile/vector30.svg" />
+            <img class="vector27" src="myprofilesaved/vector26.svg" />
             <div class="dribble2">Dribble</div>
-            <img class="clip-path-group2" src="myprofile/clip-path-group1.svg" />
-          </div>
-          <div class="link-form">
-            <img class="group4" src="myprofile/group3.svg" />
-            <div class="harrypot-10">@harrypot10</div>
-            <div class="frame-48096198">
-              <div class="submit">Submit</div>
-              <img class="vector32" src="myprofile/vector31.svg" />
-              <img class="vector33" src="myprofile/vector32.svg" />
-            </div>
+            <img class="clip-path-group2" src="myprofilesaved/clip-path-group1.svg" />
           </div>
           <div class="behance">
             <div class="behance2">
-              <img class="vector34" src="myprofile/vector33.svg" />
+              <img class="vector28" src="myprofilesaved/vector27.svg" />
               <div class="behance3">Behance</div>
-              <img class="clip-path-group3" src="myprofile/clip-path-group2.svg" />
+              <img class="clip-path-group3" src="myprofilesaved/clip-path-group2.svg" />
             </div>
-            <div class="harrypot-102">@harrypot10</div>
+            <div class="harrypot-10">@harrypot10</div>
           </div>
           <div class="github">
             <div class="frame-48096194">
-              <img class="vector35" src="myprofile/vector34.svg" />
+              <img class="vector29" src="myprofilesaved/vector28.svg" />
               <div class="github2">Github</div>
-              <img class="clip-path-group4" src="myprofile/clip-path-group3.svg" />
+              <img class="clip-path-group4" src="myprofilesaved/clip-path-group3.svg" />
             </div>
-            <div class="button5">
-              <img class="vector36" src="myprofile/vector35.svg" />
+            <div class="button3">
+              <img class="vector30" src="myprofilesaved/vector29.svg" />
               <div class="link">Link</div>
             </div>
           </div>
           <div class="twitter">
             <div class="frame-48096195">
-              <img class="vector37" src="myprofile/vector36.svg" />
+              <img class="vector31" src="myprofilesaved/vector30.svg" />
               <div class="twitter2">Twitter</div>
-              <img class="vector38" src="myprofile/vector37.svg" />
+              <img class="vector32" src="myprofilesaved/vector31.svg" />
             </div>
-            <div class="button5">
-              <img class="vector39" src="myprofile/vector38.svg" />
+            <div class="button3">
+              <img class="vector33" src="myprofilesaved/vector32.svg" />
               <div class="link">Link</div>
             </div>
           </div>
           <div class="website">
             <div class="frame-48096196">
-              <img class="vector40" src="myprofile/vector39.svg" />
+              <img class="vector34" src="myprofilesaved/vector33.svg" />
               <div class="website2">Website</div>
-              <img class="vector41" src="myprofile/vector40.svg" />
+              <img class="vector35" src="myprofilesaved/vector34.svg" />
             </div>
-            <div class="button5">
-              <img class="vector42" src="myprofile/vector41.svg" />
+            <div class="button3">
+              <img class="vector36" src="myprofilesaved/vector35.svg" />
               <div class="link">Link</div>
             </div>
           </div>
           <div class="pinterest">
             <div class="frame-48096197">
-              <img class="vector43" src="myprofile/vector42.svg" />
+              <img class="vector37" src="myprofilesaved/vector36.svg" />
               <div class="pinterest2">Pinterest</div>
-              <img class="clip-path-group5" src="myprofile/clip-path-group4.svg" />
+              <img class="clip-path-group5" src="myprofilesaved/clip-path-group4.svg" />
             </div>
-            <div class="button5">
-              <img class="vector44" src="myprofile/vector43.svg" />
+            <div class="button3">
+              <img class="vector38" src="myprofilesaved/vector37.svg" />
               <div class="link">Link</div>
             </div>
           </div>
         </div>
-        <div class="view-more">View more</div>
       </div>
     </div>
     <div class="breadcrumb">
       <div class="label">Profile Details</div>
       <div class="process">
-        <div class="label2"><a href="LandingPageSignUp.html" style="color: #767F8C;">Home</a></div>
+        <div class="label2"><a href="LandingPageSignUp.html" style="color: #767F8C ;">Home</a></div>
         <div class="div">/</div>
         <div class="label3">Profile</div>
       </div>
     </div>
     <div class="footer">
       <div class="logo-and-desc">
-        <img class="logoo-2" src="myprofile/logoo-20.png" />
+        <img class="logoo-2" src="myprofilesaved/logoo-20.png" />
         <div class="group-85">
           <div
             class="explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies"
@@ -2414,23 +2195,23 @@
           <div class="rectangle-155"></div>
           <div class="facebok">
             <div class="rectangle-13"></div>
-            <img class="facebook-logo" src="myprofile/facebook-logo0.svg" />
+            <img class="facebook-logo" src="myprofilesaved/facebook-logo0.svg" />
           </div>
         </div>
         <div class="twetter">
           <div class="rectangle-14"></div>
           <div class="rectangle-156"></div>
-          <img class="twitter-logo" src="myprofile/twitter-logo0.svg" />
+          <img class="twitter-logo" src="myprofilesaved/twitter-logo0.svg" />
         </div>
         <div class="linkedin">
           <div class="rectangle-15"></div>
           <div class="rectangle-157"></div>
-          <img class="linkedin-logo" src="myprofile/linkedin-logo0.svg" />
+          <img class="linkedin-logo" src="myprofilesaved/linkedin-logo0.svg" />
         </div>
         <div class="instagram">
           <div class="rectangle-16"></div>
           <div class="rectangle-158"></div>
-          <img class="instagram-logo" src="myprofile/instagram-logo0.svg" />
+          <img class="instagram-logo" src="myprofilesaved/instagram-logo0.svg" />
         </div>
       </div>
       <div class="footer-list">
@@ -2456,12 +2237,12 @@
       <div class="language2">Language</div>
       <div class="div2">
         <div class="rectangle-2-2"></div>
-        <img class="chevron-down" src="myprofile/chevron-down0.svg" />
+        <img class="chevron-down" src="myprofilesaved/chevron-down0.svg" />
         <div class="english">ENGLISH</div>
       </div>
       <div class="app-store-google-play">
-        <img class="googleplay" src="myprofile/googleplay0.svg" />
-        <img class="appstore" src="myprofile/appstore0.svg" />
+        <img class="googleplay" src="myprofilesaved/googleplay0.svg" />
+        <img class="appstore" src="myprofilesaved/appstore0.svg" />
       </div>
     </div>
   </div>
