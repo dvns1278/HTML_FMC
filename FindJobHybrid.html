@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .find-job-hybrid,
+.find-job-hybrid * {
+  box-sizing: border-box;
+}
+.find-job-hybrid {
+  background: #f3f3f9;
+  height: 2533px;
+  position: relative;
+  overflow: hidden;
+}
+.find-job {
+  width: 1280px;
+  height: 1045px;
+  position: absolute;
+  left: 79px;
+  top: 875px;
+}
+.adbance-filter {
+  background: var(--gray-scale-white, #ffffff);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: var(--gray-100, #e4e5e8);
+  border-width: 1px;
+  padding: 0px 12px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 94px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1280px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 44, 109, 0.04);
+}
+.input-field {
+  background: var(--gray-00, #ffffff);
+  border-radius: 5px;
+  padding: 10px;
+  flex-shrink: 0;
+  width: 667px;
+  height: 48px;
+  position: relative;
+}
+.search-by-job-tittle-position-keyword {
+  color: var(--gray-400, #9199a3);
+  text-align: left;
+  font-family: var(--inter-medium-18-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--inter-medium-18-font-size, 18px);
+  line-height: var(--inter-medium-18-line-height, 28px);
+  font-weight: var(--inter-medium-18-font-weight, 500);
+  position: absolute;
+  left: 101px;
+  top: calc(50% - 12px);
+  width: 441px;
+}
+.fi-search {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 45px;
+  top: calc(50% - 10px);
+  overflow: visible;
+}
+.frame-671 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button {
+  background: #ffffff;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary, #0077b6);
+  border-width: 1px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.primary {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--button-button-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--button-button-font-size, 16px);
+  line-height: var(--button-button-line-height, 24px);
+  font-weight: var(--button-button-font-weight, 600);
+  position: relative;
+}
+.button2 {
+  background: var(--primary, #0077b6);
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--primary, #0077b6);
+  border-width: 1px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.primary2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--button-button-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--button-button-font-size, 16px);
+  line-height: var(--button-button-line-height, 24px);
+  font-weight: var(--button-button-font-weight, 600);
+  position: relative;
+}
+.button3 {
+  background: var(--gray-50, #f1f2f4);
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.sliders {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.sliders2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.primary3 {
+  color: var(--gray-900, #18191c);
+  text-align: left;
+  font-family: var(--button-button-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--button-button-font-size, 16px);
+  line-height: var(--button-button-line-height, 24px);
+  font-weight: var(--button-button-font-weight, 600);
+  position: relative;
+}
+.devider {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--gray-scale-50, #edeff5);
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 72px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.job-recommendation {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1201px;
+  position: absolute;
+  left: 40px;
+  top: 125px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 41px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 580px;
+  position: relative;
+}
+.job-list {
+  background: var(--neutrals-0, #ffffff);
+  padding: 24px 40px 24px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.company-logo {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+.base {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.nomad {
+  width: 75.94%;
+  height: 90%;
+  position: absolute;
+  right: 11.56%;
+  left: 12.5%;
+  bottom: 5%;
+  top: 5%;
+  overflow: hidden;
+}
+.group {
+  width: 100%;
+  height: 99.7%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0.3%;
+  top: 0.01%;
+  overflow: visible;
+}
+.job-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.social-media-assistant {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: relative;
+}
+.company-name-location-job-type {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.nomad2 {
+  color: var(--neutrals-80, #515b6f);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+}
+.ellipse-4 {
+  background: var(--neutrals-80, #515b6f);
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  position: relative;
+}
+.paris-france {
+  color: var(--neutrals-80, #515b6f);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.label2 {
+  background: rgba(86, 205, 173, 0.1);
+  border-radius: 80px;
+  padding: 6px 10px 6px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.caption {
+  color: var(--accents-green, #56cdad);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.rectangle-2752 {
+  background: var(--neutrals-20, #d6ddeb);
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 1px;
+  position: relative;
+}
+.label3 {
+  border-radius: 80px;
+  border-style: solid;
+  border-color: var(--accents-yellow, #ffb836);
+  border-width: 1px;
+  padding: 6px 10px 6px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.caption2 {
+  color: var(--accents-yellow, #ffb836);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.label4 {
+  border-radius: 80px;
+  border-style: solid;
+  border-color: var(--brands-primary, #4640de);
+  border-width: 1px;
+  padding: 6px 10px 6px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.caption3 {
+  color: var(--brands-primary, #4640de);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.dropbox {
+  width: 80%;
+  height: 75%;
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  bottom: 12.5%;
+  top: 12.5%;
+  overflow: visible;
+}
+.caption4 {
+  color: var(--accents-yellow, #ffb836);
+  text-align: left;
+  font-family: var(
+    --body-small-semibold-font-family,
+    "Epilogue-SemiBold",
+    sans-serif
+  );
+  font-size: var(--body-small-semibold-font-size, 14px);
+  line-height: var(--body-small-semibold-line-height, 160%);
+  font-weight: var(--body-small-semibold-font-weight, 600);
+  position: relative;
+}
+.caption5 {
+  color: var(--brands-primary, #4640de);
+  text-align: left;
+  font-family: var(
+    --body-small-semibold-font-family,
+    "Epilogue-SemiBold",
+    sans-serif
+  );
+  font-size: var(--body-small-semibold-font-size, 14px);
+  line-height: var(--body-small-semibold-line-height, 160%);
+  font-weight: var(--body-small-semibold-font-weight, 600);
+  position: relative;
+}
+.job-list2 {
+  background: var(--neutrals-0, #ffffff);
+  padding: 24px 40px 24px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 580px;
+  position: relative;
+}
+.packer {
+  width: 52.5%;
+  height: 80%;
+  position: absolute;
+  right: 23.75%;
+  left: 23.75%;
+  bottom: 10%;
+  top: 10%;
+  overflow: visible;
+}
+.terraform-enterprise {
+  width: 71.25%;
+  height: 80%;
+  position: absolute;
+  right: 13.75%;
+  left: 15%;
+  bottom: 10%;
+  top: 10%;
+  overflow: hidden;
+}
+.xmlid-8 {
+  width: 99.99%;
+  height: 100%;
+  position: absolute;
+  right: 0.01%;
+  left: 0.01%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.packer2 {
+  width: 52.5%;
+  height: 80%;
+  position: absolute;
+  right: 23.75%;
+  left: 23.75%;
+  bottom: 10%;
+  top: 10%;
+  overflow: visible;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 580px;
+  position: relative;
+}
+.mask-group {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.company-logo2 {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: visible;
+}
+.company-logo3 {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: visible;
+}
+.company-logo4 {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: visible;
+}
+.mask-group2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 464px;
+  top: 997px;
+}
+.icon-button {
+  border-radius: 84px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(-1, 1);
+}
+.fi-arrow-right {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.pagination2 {
+  background: var(--primary, #0077b6);
+  border-radius: 50px;
+  padding: 10px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+._01 {
+  color: var(--gray-00, #ffffff);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 20px);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination3 {
+  border-radius: 50px;
+  padding: 10px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+._012 {
+  color: var(--gray-600, #5e6670);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 20px);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination4 {
+  background: var(--gray-50, #f1f2f4);
+  border-radius: 50px;
+  padding: 10px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+._013 {
+  color: var(--gray-900, #18191c);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 20px);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button2 {
+  border-radius: 84px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.fi-arrow-right2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(106, 161, 166, 1) 0.0999748706817627%,
+    rgba(50, 90, 94, 0.54) 100%
+  );
+  width: 1442px;
+  height: 541px;
+  position: absolute;
+  left: calc(50% - 722px);
+  bottom: 0px;
+  overflow: hidden;
+}
+.logo-and-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 424px;
+  position: absolute;
+  left: 129px;
+  top: 60px;
+}
+.logoo-2 {
+  flex-shrink: 0;
+  width: 188px;
+  height: 119px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 188/119;
+}
+.group-85 {
+  flex-shrink: 0;
+  width: 424px;
+  height: 72px;
+  position: static;
+}
+.explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 134px;
+  width: 424px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 302px;
+}
+.facebook {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-155 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.facebok {
+  width: 24px;
+  height: 24px;
+  position: static;
+}
+.rectangle-13 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.facebook-logo {
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  overflow: visible;
+}
+.twetter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-14 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 52px;
+  top: 4px;
+}
+.rectangle-156 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 48px;
+  top: 0px;
+}
+.twitter-logo {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 55px;
+  top: 9px;
+  overflow: visible;
+}
+.linkedin {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-15 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 100px;
+  top: 4px;
+}
+.rectangle-157 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 96px;
+  top: 0px;
+}
+.linkedin-logo {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 104px;
+  top: 8px;
+  overflow: visible;
+}
+.instagram {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-16 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  top: 4px;
+}
+.rectangle-158 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 144px;
+  top: 0px;
+}
+.instagram-logo {
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 152px;
+  top: 7px;
+  overflow: visible;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 729px;
+  top: 94px;
+}
+.home {
+  flex-shrink: 0;
+  width: 79px;
+  height: 171px;
+  position: static;
+}
+.home2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.career-test {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 83px;
+}
+.mentorship {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 115px;
+}
+.job-listing {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 147px;
+}
+.about-us {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 51px;
+}
+.resources {
+  flex-shrink: 0;
+  width: 99px;
+  height: 171px;
+  position: static;
+}
+.resources2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 141px;
+  top: 0px;
+}
+.interview-prep {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 83px;
+}
+.career-growth {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 115px;
+}
+.popular {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 147px;
+}
+.resume-tips {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 51px;
+}
+.location {
+  flex-shrink: 0;
+  width: 188px;
+  height: 70px;
+  position: static;
+}
+.contact-us {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 302px;
+  top: 0px;
+}
+.support-findmycareer-com {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 302px;
+  top: 46px;
+}
+.language {
+  position: absolute;
+  inset: 0;
+}
+.language2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 23.26%;
+  left: 71.04%;
+  width: 5.7%;
+  bottom: 50.19%;
+  top: 43.81%;
+  height: 6%;
+}
+.div {
+  width: 205.03px;
+  height: 43.28px;
+  position: static;
+}
+.rectangle-2-2 {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  width: 14.22%;
+  height: 8%;
+  position: absolute;
+  right: 14.74%;
+  left: 71.04%;
+  bottom: 39.69%;
+  top: 52.31%;
+}
+.chevron-down {
+  width: 0.74%;
+  height: 3.5%;
+  position: absolute;
+  right: 15.53%;
+  left: 83.73%;
+  bottom: 41.94%;
+  top: 54.56%;
+  overflow: visible;
+}
+.english {
+  color: #181818;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 21.38%;
+  left: 71.98%;
+  width: 6.64%;
+  bottom: 40.69%;
+  top: 53.31%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app-store-google-play {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 388px;
+}
+.googleplay {
+  flex-shrink: 0;
+  width: 153.54px;
+  height: 43.2px;
+  position: relative;
+  overflow: visible;
+}
+.appstore {
+  flex-shrink: 0;
+  width: 191.93px;
+  height: 54px;
+  position: relative;
+  overflow: visible;
+}
+.hero {
+  background: linear-gradient(
+    220.84deg,
+    rgba(128, 190, 242, 0.3) 24.59997534751892%,
+    rgba(255, 255, 255, 0.6) 47.599974274635315%,
+    rgba(0, 126, 229, 0.3) 99.90002512931824%
+  );
+  padding: 24px 275px 120px 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  height: 696px;
+  position: absolute;
+  left: calc(50% - 721px);
+  top: calc(50% - 1158.5px);
+  overflow: hidden;
+}
+.headlines-find-job {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 650px;
+  height: 274px;
+  position: relative;
+}
+.frame-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 274px;
+  position: relative;
+}
+.discover-your-talent-and-find-the-right-job-for-you {
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.discover-your-talent-and-find-the-right-job-for-you-span {
+  color: var(--black, #000000);
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.discover-your-talent-and-find-the-right-job-for-you-span2 {
+  color: var(--accent, #f4a261);
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.your-skills-interests-and-personality-all-in-one-career-platform {
+  margin: -46px 0 0 0;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: relative;
+  width: 645px;
+}
+._2 {
+  flex-shrink: 0;
+  width: 616px;
+  height: 673px;
+  position: relative;
+  object-fit: cover;
+}
+.header {
+  padding: 18px 79px 18px 79px;
+  display: flex;
+  flex-direction: row;
+  gap: 94px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+}
+.logoo-22 {
+  flex-shrink: 0;
+  width: 113.67px;
+  height: 72.37px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 113.67/72.37;
+}
+.frame-240 {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 19px;
+  position: relative;
+}
+.home3 {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.find-jobs {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.skill-career-tests {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.mentoring {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.forum-communities {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.frame-239 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-button {
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.join-for-free {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.link-button2 {
+  background: var(--accent, #f4a261);
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.take-career-test {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.profile-image {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  object-fit: cover;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="find-job-hybrid">
+    <div class="find-job">
+      <div class="adbance-filter">
+        <div class="input-field">
+          <div class="search-by-job-tittle-position-keyword">
+            Search by: Job tittle, Position, Keyword...
+          </div>
+          <img class="fi-search" src="findjob/fi-search0.svg" />
+        </div>
+        <div class="frame-671">
+          <div class="button">
+            <div class="primary">on-Site</div>
+          </div>
+          <div class="button">
+            <div class="primary">Remote</div>
+          </div>
+          <div class="button2">
+            <div class="primary2">Hybrid</div>
+          </div>
+          <div class="button3">
+            <div class="sliders">
+              <img class="sliders2" src="findjob/sliders1.svg" />
+            </div>
+            <div class="primary3">Filters</div>
+          </div>
+        </div>
+        <div class="devider"></div>
+      </div>
+      <div class="job-recommendation">
+        <div class="list">
+          <div class="col-1">
+            <div class="job-list">
+              <div class="company-logo">
+                <div class="base"></div>
+                <div class="nomad">
+                  <img class="group" src="findjob/group0.svg" />
+                </div>
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">Social Media Assistant</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Nomad</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Paris, France</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption2">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption3">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list">
+              <div class="company-logo">
+                <div class="base"></div>
+                <img class="dropbox" src="findjob/dropbox0.svg" />
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">Brand Designer</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Dropbox</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">San Fransisco, USA</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <div class="company-logo">
+                <div class="base"></div>
+                <img class="packer" src="findjob/packer0.svg" />
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">HR Manager</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Packer</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Lucern, Switzerland</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <div class="company-logo">
+                <div class="base"></div>
+                <div class="terraform-enterprise">
+                  <img class="xmlid-8" src="findjob/xmlid-80.svg" />
+                </div>
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">Interactive Developer</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Terraform</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Hamburg, Germany</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <div class="company-logo">
+                <div class="base"></div>
+                <img class="packer2" src="findjob/packer1.svg" />
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">HR Manager</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Packer</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Lucern, Switzerland</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="job-list2">
+              <div class="company-logo">
+                <img class="mask-group" src="findjob/mask-group0.svg" />
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">HR Manager</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Webflow</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Lucern, Switzerland</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <img class="company-logo2" src="findjob/company-logo6.svg" />
+              <div class="job-title">
+                <div class="social-media-assistant">Social Media Assistant</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Netlify</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Paris, France</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <img class="company-logo3" src="findjob/company-logo7.svg" />
+              <div class="job-title">
+                <div class="social-media-assistant">Brand Designer</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Maze</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">San Fransisco, USA</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <img class="company-logo4" src="findjob/company-logo8.svg" />
+              <div class="job-title">
+                <div class="social-media-assistant">Interactive Developer</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Udacity</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Hamburg, Germany</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="job-list2">
+              <div class="company-logo">
+                <img class="mask-group2" src="findjob/mask-group1.svg" />
+              </div>
+              <div class="job-title">
+                <div class="social-media-assistant">HR Manager</div>
+                <div class="company-name-location-job-type">
+                  <div class="nomad2">Webflow</div>
+                  <div class="ellipse-4"></div>
+                  <div class="paris-france">Lucern, Switzerland</div>
+                </div>
+                <div class="label">
+                  <div class="label2">
+                    <div class="caption">Hybrid</div>
+                  </div>
+                  <div class="rectangle-2752"></div>
+                  <div class="label3">
+                    <div class="caption4">Marketing</div>
+                  </div>
+                  <div class="label4">
+                    <div class="caption5">Design</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="icon-button">
+          <img class="fi-arrow-right" src="findjob/fi-arrow-right0.svg" />
+        </div>
+        <div class="pages">
+          <div class="pagination2">
+            <div class="_01">01</div>
+          </div>
+          <div class="pagination3">
+            <div class="_012">02</div>
+          </div>
+          <div class="pagination3">
+            <div class="_012">03</div>
+          </div>
+          <div class="pagination4">
+            <div class="_013">04</div>
+          </div>
+          <div class="pagination3">
+            <div class="_012">05</div>
+          </div>
+        </div>
+        <div class="icon-button2">
+          <img class="fi-arrow-right2" src="findjob/fi-arrow-right1.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo-and-desc">
+        <img class="logoo-2" src="findjob/logoo-20.png" />
+        <div class="group-85">
+          <div
+            class="explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies"
+          >
+            Explore job opportunities tailored to your strengths. Take our career
+            test, upskill with mentoring, and connect with the best companies.
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="facebook">
+          <div class="rectangle-155"></div>
+          <div class="facebok">
+            <div class="rectangle-13"></div>
+            <img class="facebook-logo" src="findjob/facebook-logo0.svg" />
+          </div>
+        </div>
+        <div class="twetter">
+          <div class="rectangle-14"></div>
+          <div class="rectangle-156"></div>
+          <img class="twitter-logo" src="findjob/twitter-logo0.svg" />
+        </div>
+        <div class="linkedin">
+          <div class="rectangle-15"></div>
+          <div class="rectangle-157"></div>
+          <img class="linkedin-logo" src="findjob/linkedin-logo0.svg" />
+        </div>
+        <div class="instagram">
+          <div class="rectangle-16"></div>
+          <div class="rectangle-158"></div>
+          <img class="instagram-logo" src="findjob/instagram-logo0.svg" />
+        </div>
+      </div>
+      <div class="footer-list">
+        <div class="home">
+          <div class="home2">Home</div>
+          <div class="career-test">Career Test</div>
+          <div class="mentorship">Mentorship</div>
+          <div class="job-listing">Job Listing</div>
+          <div class="about-us">About Us</div>
+        </div>
+        <div class="resources">
+          <div class="resources2">Resources</div>
+          <div class="interview-prep">Interview Prep</div>
+          <div class="career-growth">Career Growth</div>
+          <div class="popular">Popular</div>
+          <div class="resume-tips">Resume Tips</div>
+        </div>
+        <div class="location">
+          <div class="contact-us">Contact Us</div>
+          <div class="support-findmycareer-com">support@findmycareer.com</div>
+        </div>
+      </div>
+      <div class="language2">Language</div>
+      <div class="div">
+        <div class="rectangle-2-2"></div>
+        <img class="chevron-down" src="findjob/chevron-down0.svg" />
+        <div class="english">ENGLISH</div>
+      </div>
+      <div class="app-store-google-play">
+        <img class="googleplay" src="findjob/googleplay0.svg" />
+        <img class="appstore" src="findjob/appstore0.svg" />
+      </div>
+    </div>
+    <div class="hero">
+      <div class="headlines-find-job">
+        <div class="frame-11">
+          <div class="discover-your-talent-and-find-the-right-job-for-you">
+            <span>
+              <span
+                class="discover-your-talent-and-find-the-right-job-for-you-span"
+              >
+                Find Your
+              </span>
+              <span
+                class="discover-your-talent-and-find-the-right-job-for-you-span2"
+              >
+                Dream Job
+              </span>
+            </span>
+          </div>
+          <div
+            class="your-skills-interests-and-personality-all-in-one-career-platform"
+          >
+            Discover job opportunities tailored to your skills and interests. Use
+            filters and sorting options to refine your search and land the perfect
+            role.
+          </div>
+        </div>
+      </div>
+      <img class="_2" src="findjob/_20.png" />
+    </div>
+    <div class="header">
+      <img class="logoo-22" src="findjob/logoo-21.png" />
+      <div class="frame-240">
+        <div class="home3">Home</div>
+        <div class="find-jobs">Find Jobs</div>
+        <div class="skill-career-tests">Skill &amp; career tests</div>
+        <div class="mentoring">Mentoring</div>
+        <div class="forum-communities">Forum Communities</div>
+      </div>
+      <div class="frame-239">
+        <div class="link-button">
+          <div class="join-for-free">Complete Profile</div>
+        </div>
+        <div class="link-button2">
+          <div class="take-career-test">Take Career Test</div>
+        </div>
+        <img class="profile-image" src="findjob/profile-image0.png" />
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
