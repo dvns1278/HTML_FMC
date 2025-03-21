@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .find-job-recruitment,
+.find-job-recruitment * {
+  box-sizing: border-box;
+}
+.find-job-recruitment {
+  background: #f3f3f9;
+  height: 2156px;
+  position: relative;
+  overflow: hidden;
+}
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(106, 161, 166, 1) 0.0999748706817627%,
+    rgba(50, 90, 94, 0.54) 100%
+  );
+  width: 1442px;
+  height: 541px;
+  position: absolute;
+  left: calc(50% - 722px);
+  bottom: 0px;
+  overflow: hidden;
+}
+.logo-and-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 424px;
+  position: absolute;
+  left: 129px;
+  top: 60px;
+}
+.logoo-2 {
+  flex-shrink: 0;
+  width: 188px;
+  height: 119px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 188/119;
+}
+.group-85 {
+  flex-shrink: 0;
+  width: 424px;
+  height: 72px;
+  position: static;
+}
+.explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 134px;
+  width: 424px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 302px;
+}
+.facebook {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-155 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.facebok {
+  width: 24px;
+  height: 24px;
+  position: static;
+}
+.rectangle-13 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.facebook-logo {
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  overflow: visible;
+}
+.twetter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-14 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 52px;
+  top: 4px;
+}
+.rectangle-156 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 48px;
+  top: 0px;
+}
+.twitter-logo {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 55px;
+  top: 9px;
+  overflow: visible;
+}
+.linkedin {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-15 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 100px;
+  top: 4px;
+}
+.rectangle-157 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 96px;
+  top: 0px;
+}
+.linkedin-logo {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 104px;
+  top: 8px;
+  overflow: visible;
+}
+.instagram {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-16 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  top: 4px;
+}
+.rectangle-158 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 144px;
+  top: 0px;
+}
+.instagram-logo {
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 152px;
+  top: 7px;
+  overflow: visible;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 729px;
+  top: 94px;
+}
+.home {
+  flex-shrink: 0;
+  width: 79px;
+  height: 171px;
+  position: static;
+}
+.home2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.career-test {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 83px;
+}
+.mentorship {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 115px;
+}
+.job-listing {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 147px;
+}
+.about-us {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 51px;
+}
+.resources {
+  flex-shrink: 0;
+  width: 99px;
+  height: 171px;
+  position: static;
+}
+.resources2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 141px;
+  top: 0px;
+}
+.interview-prep {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 83px;
+}
+.career-growth {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 115px;
+}
+.popular {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 147px;
+}
+.resume-tips {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 51px;
+}
+.location {
+  flex-shrink: 0;
+  width: 188px;
+  height: 70px;
+  position: static;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 302px;
+  top: 0px;
+}
+.support-findmycareer-com {
+  color: #f4f4f4;
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 302px;
+  top: 46px;
+}
+.language {
+  position: absolute;
+  inset: 0;
+}
+.language2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 23.26%;
+  left: 71.04%;
+  width: 5.7%;
+  bottom: 50.19%;
+  top: 43.81%;
+  height: 6%;
+}
+.div {
+  width: 205.03px;
+  height: 43.28px;
+  position: static;
+}
+.rectangle-2-2 {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  width: 14.22%;
+  height: 8%;
+  position: absolute;
+  right: 14.74%;
+  left: 71.04%;
+  bottom: 39.69%;
+  top: 52.31%;
+}
+.chevron-down {
+  width: 0.74%;
+  height: 3.5%;
+  position: absolute;
+  right: 15.53%;
+  left: 83.73%;
+  bottom: 41.94%;
+  top: 54.56%;
+  overflow: visible;
+}
+.english {
+  color: #181818;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 21.38%;
+  left: 71.98%;
+  width: 6.64%;
+  bottom: 40.69%;
+  top: 53.31%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app-store-google-play {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 388px;
+}
+.googleplay {
+  flex-shrink: 0;
+  width: 153.54px;
+  height: 43.2px;
+  position: relative;
+  overflow: visible;
+}
+.appstore {
+  flex-shrink: 0;
+  width: 191.93px;
+  height: 54px;
+  position: relative;
+  overflow: visible;
+}
+.find-job-group {
+  height: auto;
+  position: absolute;
+  left: 50px;
+  top: 398.35px;
+  overflow: visible;
+}
+.breadcrumb {
+  background: #f3f3f9;
+  padding: 24px 300px 24px 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  height: 96px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.label {
+  color: #18191c;
+  text-align: center;
+  font-family: var(--inter-medium-18-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--inter-medium-18-font-size, 18px);
+  line-height: var(--inter-medium-18-line-height, 28px);
+  font-weight: var(--inter-medium-18-font-weight, 500);
+  position: relative;
+}
+.process {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.label2 {
+  color: #767f8c;
+  text-align: left;
+  font-family: var(--inter-regular-14-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--inter-regular-14-font-size, 14px);
+  line-height: var(--inter-regular-14-line-height, 20px);
+  font-weight: var(--inter-regular-14-font-weight, 400);
+  position: relative;
+}
+.div2 {
+  color: #767f8c;
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 20px);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.label3 {
+  color: var(--gray-500, #767f8c);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 20px);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.div3 {
+  color: var(--gray-500, #767f8c);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 20px);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.label4 {
+  color: #0077b6;
+  text-align: left;
+  font-family: var(--inter-regular-14-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--inter-regular-14-font-size, 14px);
+  line-height: var(--inter-regular-14-line-height, 20px);
+  font-weight: var(--inter-regular-14-font-weight, 400);
+  position: relative;
+}
+.salary-box {
+  width: 387px;
+  height: 564px;
+  position: absolute;
+  left: 1002px;
+  top: 467px;
+}
+.vector {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.salary {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 277px;
+  position: absolute;
+  left: 54px;
+  top: 47px;
+}
+.frame-48096206 {
+  padding: 0px 50px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-48096205 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.salary2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._20-40-hourly {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form-salary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 207px;
+  position: relative;
+}
+.employment-form {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.building-logo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+}
+.type-employment {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 127px;
+  position: relative;
+}
+.full-time {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.employment-type {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.experience-form {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.work-logo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 127px;
+  position: relative;
+}
+._1-year {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.experience2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.location-form {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-logo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+}
+.location2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 127px;
+  position: relative;
+}
+.london-uk {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.location3 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.email-logo {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+}
+.location4 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 142px;
+  position: relative;
+}
+.hr-lilly-udacity-com {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+  width: 142px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.apply-button {
+  flex-shrink: 0;
+  width: 202px;
+  height: 44px;
+  position: static;
+}
+.vector2 {
+  width: 72.92%;
+  height: 9.82%;
+  position: absolute;
+  right: 13.54%;
+  left: 13.54%;
+  bottom: 0%;
+  top: 90.18%;
+  overflow: visible;
+}
+.apply-now {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font-family: var(--inter-medium-18-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--inter-medium-18-font-size, 18px);
+  line-height: var(--inter-medium-18-line-height, 28px);
+  font-weight: var(--inter-medium-18-font-weight, 500);
+  position: absolute;
+  left: 86.5px;
+  top: 412px;
+  width: 104px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 863px;
+  position: absolute;
+  left: 69px;
+  top: 1289px;
+}
+.about-company {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-48096150 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 110px;
+  position: static;
+}
+.udacity-is-a-global-online-learning-platform-dedicated-to-empowering-individuals-with-cutting-edge-tech-skills-founded-with-a-mission-to-bridge-the-gap-between-education-and-industry-udacity-offers-hands-on-project-based-learning-programs-in-ai-data-science-programming-cybersecurity-and-more-with-industry-partnerships-from-top-companies-like-google-amazon-and-ibm-udacity-equips-learners-with-real-world-expertise-to-advance-their-careers-in-the-digital-era {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 33px;
+  width: 863px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.job-details {
+  width: 1142px;
+  height: 769px;
+  position: absolute;
+  left: 54px;
+  top: 462px;
+}
+.vector3 {
+  width: 79.86%;
+  height: 100%;
+  position: absolute;
+  right: 20.14%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.group-48096151 {
+  position: absolute;
+  inset: 0;
+}
+.vector4 {
+  width: 75.74%;
+  height: 0%;
+  position: absolute;
+  right: 22.24%;
+  left: 2.01%;
+  bottom: 78.48%;
+  top: 21.52%;
+  overflow: visible;
+}
+.vector5 {
+  width: 75.74%;
+  height: 0%;
+  position: absolute;
+  right: 22.24%;
+  left: 2.01%;
+  bottom: 45.84%;
+  top: 54.16%;
+  overflow: visible;
+}
+.vector6 {
+  width: 75.74%;
+  height: 0.13%;
+  position: absolute;
+  right: 22.24%;
+  left: 2.01%;
+  bottom: 13%;
+  top: 86.87%;
+  overflow: visible;
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 833px;
+  position: absolute;
+  left: 34px;
+  top: 31px;
+}
+.overview2 {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-480961502 {
+  flex-shrink: 0;
+  width: 833px;
+  height: 81px;
+  position: static;
+}
+.an-interactive-developer-plays-a-key-role-in-crafting-immersive-and-engaging-digital-experiences-by-combining-technical-expertise-with-creative-problem-solving-this-position-involves-developing-interactive-web-applications-animations-and-user-interfaces-that-enhance-user-engagement {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 31px;
+  width: 833px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.job-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 833px;
+  position: absolute;
+  left: 34px;
+  top: 197px;
+}
+.job-description {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-480961503 {
+  flex-shrink: 0;
+  width: 654px;
+  height: 153px;
+  position: static;
+}
+.develop-interactive-web-applications-and-engaging-ui-components-implement-animations-and-dynamic-content-using-java-script-web-gl-or-other-frameworks-collaborate-with-designers-developers-and-product-teams-to-bring-ideas-to-life-optimize-performance-and-ensure-responsiveness-across-devices-stay-up-to-date-with-the-latest-trends-in-web-technologies-and-interactive-media-troubleshoot-and-debug-interactive-elements-for-seamless-functionality {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  width: 654px;
+  height: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.offers2 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 833px;
+  position: absolute;
+  left: 34px;
+  top: 450px;
+}
+.offers3 {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.competitive-salary-and-benefits-package-opportunity-to-work-with-cutting-edge-interactive-technologies-flexible-work-options-including-remote-opportunities-collaborative-team-environment-with-mentorship-and-learning-opportunities-career-growth-in-a-fast-paced-and-innovative-industry-work-on-exciting-projects-that-push-the-boundaries-of-interactivity {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  width: 654px;
+  height: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.requirements {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 34px;
+  top: 703px;
+}
+.button {
+  flex-shrink: 0;
+  width: 109px;
+  height: 36px;
+  position: relative;
+}
+.vector7 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.contract {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 30%;
+  top: 25.56%;
+  height: 44.44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector8 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.full-time2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 30%;
+  top: 25.56%;
+  height: 44.44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button2 {
+  flex-shrink: 0;
+  width: 154px;
+  height: 36px;
+  position: relative;
+}
+.vector9 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+._0-1-years-experience {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  right: 7.14%;
+  left: 7.14%;
+  width: 85.71%;
+  bottom: 27.78%;
+  top: 27.78%;
+  height: 44.44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.similiar-job {
+  position: absolute;
+  inset: 0;
+}
+.vector10 {
+  width: 26.81%;
+  height: 18.44%;
+  position: absolute;
+  right: 3.61%;
+  left: 69.58%;
+  bottom: 32.63%;
+  top: 48.93%;
+  overflow: visible;
+}
+.vector11 {
+  width: 24.65%;
+  height: 0%;
+  position: absolute;
+  right: 4.69%;
+  left: 70.66%;
+  bottom: 35.31%;
+  top: 64.69%;
+  overflow: visible;
+}
+.vector12 {
+  width: 24.65%;
+  height: 0%;
+  position: absolute;
+  right: 4.69%;
+  left: 70.66%;
+  bottom: 48.9%;
+  top: 51.1%;
+  overflow: visible;
+}
+.similiar-job2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 1018px;
+  top: 1071px;
+  width: 227px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jobsss {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 354.5px;
+  position: absolute;
+  left: 1018px;
+  top: 1144px;
+}
+.google {
+  flex-shrink: 0;
+  width: 354.5px;
+  height: 51.5px;
+  position: static;
+}
+.clip-path-group {
+  width: 49px;
+  height: 17px;
+  position: absolute;
+  left: 305.5px;
+  top: 0px;
+  overflow: visible;
+}
+.google2 {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+}
+.google3 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  overflow: visible;
+}
+.job-name-company {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227px;
+  position: relative;
+}
+.software-engineer {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.google4 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.meta {
+  flex-shrink: 0;
+  width: 354.5px;
+  height: 51.5px;
+  position: static;
+}
+.clip-path-group2 {
+  width: 49px;
+  height: 17px;
+  position: absolute;
+  left: 305.5px;
+  top: 84.5px;
+  overflow: visible;
+}
+.meta2 {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+}
+.meta3 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  overflow: visible;
+}
+.web-developer {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.meta4 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.medium {
+  flex-shrink: 0;
+  width: 354.5px;
+  height: 51.5px;
+  position: static;
+}
+.clip-path-group3 {
+  width: 49px;
+  height: 17px;
+  position: absolute;
+  left: 305.5px;
+  top: 169px;
+  overflow: visible;
+}
+.medium2 {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 169.5px;
+}
+.medium3 {
+  flex-shrink: 0;
+  width: 51px;
+  height: 51px;
+  position: relative;
+  overflow: visible;
+}
+.front-end-developer {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.medium4 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.view-more {
+  width: 95.16px;
+  height: 24px;
+  position: static;
+}
+.arrow {
+  width: 0.98%;
+  height: 0.4%;
+  position: absolute;
+  right: 13.53%;
+  left: 85.49%;
+  bottom: 33.92%;
+  top: 65.68%;
+  overflow: visible;
+}
+.view-more2 {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  left: 1150px;
+  top: 1408px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headline-job {
+  position: absolute;
+  inset: 0;
+}
+.group {
+  width: 93.06%;
+  height: 12.83%;
+  position: absolute;
+  right: 3.47%;
+  left: 3.47%;
+  bottom: 80.77%;
+  top: 6.4%;
+  overflow: visible;
+}
+.job-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 803px;
+  position: absolute;
+  left: 384px;
+  top: 155px;
+}
+.desc-job {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.udacity {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  width: 54px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector13 {
+  margin: 0 0 0 -7px;
+  flex-shrink: 0;
+  width: 16.67px;
+  height: 16.67px;
+  position: relative;
+  overflow: visible;
+}
+.frame-48096204 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.interactive-developer {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: relative;
+  width: 269px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-48096203 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 20px;
+  padding: 5px 19px 5px 19px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 77px;
+  height: 24px;
+  position: relative;
+}
+.full-time3 {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.udacity-is-a-global-online-learning-platform-dedicated-to-empowering-individuals-with-cutting-edge-tech-skills-udacity-offers-hands-on-project-based-learning-programs-in-ai-data-science-programming-cybersecurity-and-more {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.london-uk2 {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.button-and-save {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.apply-button2 {
+  flex-shrink: 0;
+  width: 150px;
+  height: 44px;
+  position: static;
+}
+.vector14 {
+  width: 73.89%;
+  height: 100%;
+  position: absolute;
+  right: 26.11%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.apply-job {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font-family: var(--inter-medium-18-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--inter-medium-18-font-size, 18px);
+  line-height: var(--inter-medium-18-line-height, 28px);
+  font-weight: var(--inter-medium-18-font-weight, 500);
+  position: absolute;
+  left: 23px;
+  top: 8px;
+  width: 104px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save-icon {
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  position: relative;
+}
+.bookmark-simple {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.bookmark-simple2 {
+  width: 175%;
+  height: 175%;
+  position: absolute;
+  right: -37.5%;
+  left: -37.5%;
+  bottom: -16.67%;
+  top: -58.33%;
+  overflow: visible;
+}
+.company-logo {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e8e9ea;
+  border-width: 1px;
+  padding: 34px 37px 34px 37px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 276px;
+  height: 276px;
+  position: absolute;
+  left: 71.5px;
+  top: 137.5px;
+}
+.company-logo2 {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: visible;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="find-job-recruitment">
+    <div class="footer">
+      <div class="logo-and-desc">
+        <img class="logoo-2" src="recuritment/logoo-20.png" />
+        <div class="group-85">
+          <div
+            class="explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies"
+          >
+            Explore job opportunities tailored to your strengths. Take our career
+            test, upskill with mentoring, and connect with the best companies.
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="facebook">
+          <div class="rectangle-155"></div>
+          <div class="facebok">
+            <div class="rectangle-13"></div>
+            <img class="facebook-logo" src="recuritment/facebook-logo0.svg" />
+          </div>
+        </div>
+        <div class="twetter">
+          <div class="rectangle-14"></div>
+          <div class="rectangle-156"></div>
+          <img class="twitter-logo" src="recuritment/twitter-logo0.svg" />
+        </div>
+        <div class="linkedin">
+          <div class="rectangle-15"></div>
+          <div class="rectangle-157"></div>
+          <img class="linkedin-logo" src="recuritment/linkedin-logo0.svg" />
+        </div>
+        <div class="instagram">
+          <div class="rectangle-16"></div>
+          <div class="rectangle-158"></div>
+          <img class="instagram-logo" src="recuritment/instagram-logo0.svg" />
+        </div>
+      </div>
+      <div class="footer-list">
+        <div class="home">
+          <div class="home2">Home</div>
+          <div class="career-test">Career Test</div>
+          <div class="mentorship">Mentorship</div>
+          <div class="job-listing">Job Listing</div>
+          <div class="about-us">About Us</div>
+        </div>
+        <div class="resources">
+          <div class="resources2">Resources</div>
+          <div class="interview-prep">Interview Prep</div>
+          <div class="career-growth">Career Growth</div>
+          <div class="popular">Popular</div>
+          <div class="resume-tips">Resume Tips</div>
+        </div>
+        <div class="location">
+          <div class="contact-us">Contact Us</div>
+          <div class="support-findmycareer-com">support@findmycareer.com</div>
+        </div>
+      </div>
+      <div class="language2">Language</div>
+      <div class="div">
+        <div class="rectangle-2-2"></div>
+        <img class="chevron-down" src="recuritment/chevron-down0.svg" />
+        <div class="english">ENGLISH</div>
+      </div>
+      <div class="app-store-google-play">
+        <img class="googleplay" src="recuritment/googleplay0.svg" />
+        <img class="appstore" src="recuritment/appstore0.svg" />
+      </div>
+    </div>
+    <img class="find-job-group" src="recuritment/find-job-group0.svg" />
+    <div class="breadcrumb">
+      <div class="label">Job Details</div>
+      <div class="process">
+        <div class="label2">FindJob</div>
+        <div class="div2">/</div>
+        <div class="label3">Software Development</div>
+        <div class="div3">/</div>
+        <div class="label4">Job Details</div>
+      </div>
+    </div>
+    <div class="salary-box">
+      <img class="vector" src="recuritment/vector0.svg" />
+      <div class="salary">
+        <div class="frame-48096206">
+          <div class="frame-48096205">
+            <div class="salary2">Salary</div>
+            <div class="_20-40-hourly">$20 - $40 hourly</div>
+          </div>
+          <div class="form-salary">
+            <div class="employment-form">
+              <img class="building-logo" src="recuritment/building-logo0.svg" />
+              <div class="type-employment">
+                <div class="full-time">Full-Time</div>
+                <div class="employment-type">Employment Type</div>
+              </div>
+            </div>
+            <div class="experience-form">
+              <img class="work-logo" src="recuritment/work-logo0.svg" />
+              <div class="experience">
+                <div class="_1-year">1 year</div>
+                <div class="experience2">Experience</div>
+              </div>
+            </div>
+            <div class="location-form">
+              <img class="location-logo" src="recuritment/location-logo0.svg" />
+              <div class="location2">
+                <div class="london-uk">London, UK</div>
+                <div class="location3">Location</div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <img class="email-logo" src="recuritment/email-logo0.svg" />
+              <div class="location4">
+                <div class="hr-lilly-udacity-com">hr.lilly@udacity.com</div>
+                <div class="contact">Contact</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="apply-button">
+          <img class="vector2" src="recuritment/vector1.svg" />
+          <div class="apply-now">Apply Now</div>
+        </div>
+      </div>
+    </div>
+    <div class="offers">
+      <div class="about-company">About Company</div>
+      <div class="group-48096150">
+        <div
+          class="udacity-is-a-global-online-learning-platform-dedicated-to-empowering-individuals-with-cutting-edge-tech-skills-founded-with-a-mission-to-bridge-the-gap-between-education-and-industry-udacity-offers-hands-on-project-based-learning-programs-in-ai-data-science-programming-cybersecurity-and-more-with-industry-partnerships-from-top-companies-like-google-amazon-and-ibm-udacity-equips-learners-with-real-world-expertise-to-advance-their-careers-in-the-digital-era"
+        >
+          Udacity is a global online learning platform dedicated to empowering
+          individuals with cutting-edge tech skills. Founded with a mission to
+          bridge the gap between education and industry, Udacity offers hands-on,
+          project-based learning programs in AI, data science, programming,
+          cybersecurity, and more. With industry partnerships from top companies
+          like Google, Amazon, and IBM, Udacity equips learners with real-world
+          expertise to advance their careers in the digital era.
+        </div>
+      </div>
+    </div>
+    <div class="job-details">
+      <img class="vector3" src="recuritment/vector2.svg" />
+      <img class="vector4" src="recuritment/vector3.svg" />
+      <img class="vector5" src="recuritment/vector4.svg" />
+      <img class="vector6" src="recuritment/vector5.svg" />
+      <div class="overview">
+        <div class="overview2">Overview</div>
+        <div class="group-480961502">
+          <div
+            class="an-interactive-developer-plays-a-key-role-in-crafting-immersive-and-engaging-digital-experiences-by-combining-technical-expertise-with-creative-problem-solving-this-position-involves-developing-interactive-web-applications-animations-and-user-interfaces-that-enhance-user-engagement"
+          >
+            An Interactive Developer plays a key role in crafting immersive and
+            engaging digital experiences by combining technical expertise with
+            creative problem-solving. This position involves developing
+            interactive web applications, animations, and user interfaces that
+            enhance user engagement.
+          </div>
+        </div>
+      </div>
+      <div class="job-desc">
+        <div class="job-description">Job Description</div>
+        <div class="group-480961503">
+          <div
+            class="develop-interactive-web-applications-and-engaging-ui-components-implement-animations-and-dynamic-content-using-java-script-web-gl-or-other-frameworks-collaborate-with-designers-developers-and-product-teams-to-bring-ideas-to-life-optimize-performance-and-ensure-responsiveness-across-devices-stay-up-to-date-with-the-latest-trends-in-web-technologies-and-interactive-media-troubleshoot-and-debug-interactive-elements-for-seamless-functionality"
+          >
+            <ul
+              class="develop-interactive-web-applications-and-engaging-ui-components-implement-animations-and-dynamic-content-using-java-script-web-gl-or-other-frameworks-collaborate-with-designers-developers-and-product-teams-to-bring-ideas-to-life-optimize-performance-and-ensure-responsiveness-across-devices-stay-up-to-date-with-the-latest-trends-in-web-technologies-and-interactive-media-troubleshoot-and-debug-interactive-elements-for-seamless-functionality-span"
+            >
+              <li>
+                Develop interactive web applications and engaging UI components.
+              </li>
+              <li>
+                Implement animations and dynamic content using JavaScript, WebGL,
+                or other frameworks.
+              </li>
+              <li>
+                Collaborate with designers, developers, and product teams to bring
+                ideas to life.
+              </li>
+              <li>
+                Optimize performance and ensure responsiveness across devices.
+              </li>
+              <li>
+                Stay up-to-date with the latest trends in web technologies and
+                interactive media.
+              </li>
+              <li>
+                Troubleshoot and debug interactive elements for seamless
+                functionality.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="offers2">
+        <div class="offers3">Offers</div>
+        <div class="group-480961503">
+          <div
+            class="competitive-salary-and-benefits-package-opportunity-to-work-with-cutting-edge-interactive-technologies-flexible-work-options-including-remote-opportunities-collaborative-team-environment-with-mentorship-and-learning-opportunities-career-growth-in-a-fast-paced-and-innovative-industry-work-on-exciting-projects-that-push-the-boundaries-of-interactivity"
+          >
+            <ul
+              class="competitive-salary-and-benefits-package-opportunity-to-work-with-cutting-edge-interactive-technologies-flexible-work-options-including-remote-opportunities-collaborative-team-environment-with-mentorship-and-learning-opportunities-career-growth-in-a-fast-paced-and-innovative-industry-work-on-exciting-projects-that-push-the-boundaries-of-interactivity-span"
+            >
+              <li>Competitive salary and benefits package.</li>
+              <li>
+                Opportunity to work with cutting-edge interactive technologies.
+              </li>
+              <li>Flexible work options, including remote opportunities.</li>
+              <li>
+                Collaborative team environment with mentorship and learning
+                opportunities.
+              </li>
+              <li>Career growth in a fast-paced and innovative industry.</li>
+              <li>
+                Work on exciting projects that push the boundaries of
+                interactivity.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="requirements">
+        <div class="button">
+          <img class="vector7" src="recuritment/vector6.svg" />
+          <div class="contract">Contract</div>
+        </div>
+        <div class="button">
+          <img class="vector8" src="recuritment/vector7.svg" />
+          <div class="full-time2">Full-Time</div>
+        </div>
+        <div class="button2">
+          <img class="vector9" src="recuritment/vector8.svg" />
+          <div class="_0-1-years-experience">0-1 Years Experience</div>
+        </div>
+      </div>
+    </div>
+    <img class="vector10" src="recuritment/vector9.svg" />
+    <img class="vector11" src="recuritment/vector10.svg" />
+    <img class="vector12" src="recuritment/vector11.svg" />
+    <div class="similiar-job2">Similiar Job</div>
+    <div class="jobsss">
+      <div class="google">
+        <img class="clip-path-group" src="recuritment/clip-path-group0.svg" />
+        <div class="google2">
+          <img class="google3" src="recuritment/google2.svg" />
+          <div class="job-name-company">
+            <div class="software-engineer">Software Engineer</div>
+            <div class="google4">Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <img class="clip-path-group2" src="recuritment/clip-path-group1.svg" />
+        <div class="meta2">
+          <img class="meta3" src="recuritment/meta2.svg" />
+          <div class="job-name-company">
+            <div class="web-developer">Web Developer</div>
+            <div class="meta4">Meta</div>
+          </div>
+        </div>
+      </div>
+      <div class="medium">
+        <img class="clip-path-group3" src="recuritment/clip-path-group2.svg" />
+        <div class="medium2">
+          <img class="medium3" src="recuritment/medium2.svg" />
+          <div class="job-name-company">
+            <div class="front-end-developer">Front-End Developer</div>
+            <div class="medium4">Medium</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view-more">
+      <img class="arrow" src="recuritment/arrow0.svg" />
+      <div class="view-more2">View more</div>
+    </div>
+    <img class="group" src="recuritment/group0.svg" />
+    <div class="job-headlines">
+      <div class="desc-job">
+        <div class="company">
+          <div class="udacity">Udacity</div>
+          <img class="vector13" src="recuritment/vector12.svg" />
+        </div>
+        <div class="frame-48096204">
+          <div class="interactive-developer">Interactive Developer</div>
+          <div class="frame-48096203">
+            <div class="full-time3">Full-Time</div>
+          </div>
+        </div>
+        <div
+          class="udacity-is-a-global-online-learning-platform-dedicated-to-empowering-individuals-with-cutting-edge-tech-skills-udacity-offers-hands-on-project-based-learning-programs-in-ai-data-science-programming-cybersecurity-and-more"
+        >
+          Udacity is a global online learning platform dedicated to empowering
+          individuals with cutting-edge tech skills. Udacity offers hands-on,
+          project-based learning programs in AI, data science, programming,
+          cybersecurity, and more.
+        </div>
+        <div class="london-uk2">London, UK</div>
+      </div>
+      <div class="button-and-save">
+        <div class="apply-button2">
+          <img class="vector14" src="recuritment/vector13.svg" />
+          <div class="apply-job">Apply Job</div>
+        </div>
+        <div class="save-icon">
+          <div class="bookmark-simple">
+            <img class="bookmark-simple2" src="recuritment/bookmark-simple1.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="company-logo">
+      <img class="company-logo2" src="recuritment/company-logo1.svg" />
+    </div>
+  </div>
+  
+</body>
+</html>
