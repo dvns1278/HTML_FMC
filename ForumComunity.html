@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .forum-community,
+.forum-community * {
+  box-sizing: border-box;
+}
+.forum-community {
+  background: #f3f3f9;
+  height: 1697px;
+  position: relative;
+  overflow: hidden;
+}
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(106, 161, 166, 1) 0.0999748706817627%,
+    rgba(50, 90, 94, 0.54) 100%
+  );
+  width: 1442px;
+  height: 541px;
+  position: absolute;
+  left: calc(50% - 722px);
+  bottom: 0px;
+  overflow: hidden;
+}
+.logo-and-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 424px;
+  position: absolute;
+  left: 129px;
+  top: 60px;
+}
+.logoo-2 {
+  flex-shrink: 0;
+  width: 188px;
+  height: 119px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 188/119;
+}
+.group-85 {
+  flex-shrink: 0;
+  width: 424px;
+  height: 72px;
+  position: static;
+}
+.explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 134px;
+  width: 424px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 302px;
+}
+.facebook {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-155 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.facebok {
+  width: 24px;
+  height: 24px;
+  position: static;
+}
+.rectangle-13 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.facebook-logo {
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  overflow: visible;
+}
+.twetter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-14 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 52px;
+  top: 4px;
+}
+.rectangle-156 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 48px;
+  top: 0px;
+}
+.twitter-logo {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 55px;
+  top: 9px;
+  overflow: visible;
+}
+.linkedin {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-15 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 100px;
+  top: 4px;
+}
+.rectangle-157 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 96px;
+  top: 0px;
+}
+.linkedin-logo {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 104px;
+  top: 8px;
+  overflow: visible;
+}
+.instagram {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-16 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  top: 4px;
+}
+.rectangle-158 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 144px;
+  top: 0px;
+}
+.instagram-logo {
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 152px;
+  top: 7px;
+  overflow: visible;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 729px;
+  top: 94px;
+}
+.home {
+  flex-shrink: 0;
+  width: 79px;
+  height: 171px;
+  position: static;
+}
+.home2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.career-test {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 83px;
+}
+.mentorship {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 115px;
+}
+.job-listing {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 147px;
+}
+.about-us {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 51px;
+}
+.resources {
+  flex-shrink: 0;
+  width: 99px;
+  height: 171px;
+  position: static;
+}
+.resources2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 141px;
+  top: 0px;
+}
+.interview-prep {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 83px;
+}
+.career-growth {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 115px;
+}
+.popular {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 147px;
+}
+.resume-tips {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 51px;
+}
+.location {
+  flex-shrink: 0;
+  width: 188px;
+  height: 70px;
+  position: static;
+}
+.contact-us {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 302px;
+  top: 0px;
+}
+.support-findmycareer-com {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 302px;
+  top: 46px;
+}
+.language {
+  position: absolute;
+  inset: 0;
+}
+.language2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 23.26%;
+  left: 71.04%;
+  width: 5.7%;
+  bottom: 50.19%;
+  top: 43.81%;
+  height: 6%;
+}
+.div {
+  width: 205.03px;
+  height: 43.28px;
+  position: static;
+}
+.rectangle-2-2 {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  width: 14.22%;
+  height: 8%;
+  position: absolute;
+  right: 14.74%;
+  left: 71.04%;
+  bottom: 39.69%;
+  top: 52.31%;
+}
+.chevron-down {
+  width: 0.74%;
+  height: 3.5%;
+  position: absolute;
+  right: 15.53%;
+  left: 83.73%;
+  bottom: 41.94%;
+  top: 54.56%;
+  overflow: visible;
+}
+.english {
+  color: #181818;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 21.38%;
+  left: 71.98%;
+  width: 6.64%;
+  bottom: 40.69%;
+  top: 53.31%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app-store-google-play {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 388px;
+}
+.googleplay {
+  flex-shrink: 0;
+  width: 153.54px;
+  height: 43.2px;
+  position: relative;
+  overflow: visible;
+}
+.appstore {
+  flex-shrink: 0;
+  width: 191.93px;
+  height: 54px;
+  position: relative;
+  overflow: visible;
+}
+.header {
+  padding: 18px 79px 18px 79px;
+  display: flex;
+  flex-direction: row;
+  gap: 94px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+}
+.logoo-22 {
+  flex-shrink: 0;
+  width: 113.67px;
+  height: 72.37px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 113.67/72.37;
+}
+.frame-240 {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 19px;
+  position: relative;
+}
+.home3 {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.find-jobs {
+  color: var(--primary, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.skill-career-tests {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.mentoring {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.forum-communities {
+  color: var(--navbar, #0077B6);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.frame-239 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-button {
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.complete-profile {
+  color: #f3f3f9;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.link-button2 {
+  background: var(--accent, #f4a261);
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.take-career-test {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.profile-image {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  object-fit: cover;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 40px;
+  top: 108px;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sidebar {
+  background: var(--secondary-color-background, #ffffff);
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 210px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.new {
+  background: var(--secondary-color-background, #ffffff);
+  border-radius: 6px;
+  padding: 6px 5px 6px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 186px;
+  position: relative;
+}
+.main3 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.new-icon {
+  background: #f4f6f8;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ic-fiber-new-24-px-2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.group-6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.star-1 {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.new2 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  font-size: 6px;
+  line-height: 6px;
+  font-weight: 700;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  width: 60%;
+  bottom: 35%;
+  top: 35%;
+  height: 30%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.newest-and-recent {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.find-the-latest-update {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.popular2 {
+  background: var(--soft-white, #f4f6f8);
+  border-radius: 6px;
+  padding: 6px 5px 6px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 186px;
+  position: relative;
+}
+.popular-icon {
+  background: var(--soft-white, #f4f6f8);
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-15 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.group {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 15%;
+  top: 15%;
+  overflow: visible;
+}
+.popular-of-the-day {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.shots-featured-today-by-curators {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.following {
+  background: var(--secondary-color-background, #ffffff);
+  border-radius: 6px;
+  padding: 6px 5px 6px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 186px;
+  position: relative;
+}
+.following-icon {
+  background: #f4f6f8;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.follow {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.n-ame {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.following2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.frame-16 {
+  background: var(--primary, #0077b6);
+  border-radius: 2px;
+  padding: 3px 6px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._24 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.explore-from-your-favorite-person {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.popular-tags {
+  background: var(--secondary-color-background, #ffffff);
+  border-radius: 16px;
+  padding: 20px 25px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 210px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title2 {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.popular-tags2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tag {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon {
+  background: var(--soft-white, #f4f6f8);
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.dev {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.vector {
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: -50%;
+  top: 85%;
+  transform: translate(0px, -13px);
+  overflow: visible;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.javascript {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+._82-645-posted-by-this-tag {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.icon2 {
+  background: var(--soft-white, #f4f6f8);
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.bitcoin {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.bitcoin2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+._65-523-posted-trending {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.design {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.design2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+._51-354-trending-in-bangladesh {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.blogging {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.vector2 {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 12.5%;
+  top: 7.5%;
+  overflow: visible;
+}
+.blogging2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+._48-029-posted-by-this-tag {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.tutorial {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.vector3 {
+  width: 95.05%;
+  height: 100%;
+  position: absolute;
+  right: 2.45%;
+  left: 2.5%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.tutorial2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.seo {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.seo2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.creat-post {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 785px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main5 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.profile-image2 {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  object-fit: cover;
+}
+.input-data {
+  background: var(--soft-white, #f4f6f8);
+  border-radius: 6px;
+  padding: 12px 0px 12px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 553px;
+  position: relative;
+}
+.let-s-share-what-going-on-your-mind {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.button {
+  background: var(--accent, #f4a261);
+  border-radius: 6px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.create-post {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Rubik-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.post {
+  background: var(--white, #ffffff);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 785px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main6 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.image {
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(43, 0, 212, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 156px;
+  height: 156px;
+  position: relative;
+  box-shadow: 0px 2px 6px 0px rgba(43, 0, 212, 0.06);
+  object-fit: cover;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 569px;
+  position: relative;
+}
+.data2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 519px;
+  position: relative;
+}
+.title3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.what-is-the-best-sites-to-find-job-in-2025 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: relative;
+  width: 521px;
+}
+.tags2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tag2 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.job {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.life {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.recommendation {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.avatars {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: static;
+}
+.image2 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.name2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 521px;
+  position: relative;
+}
+.name3 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ginny-weasley {
+  color: var(--black, #000000);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+}
+.ellipse-30 {
+  background: var(--input-typography, rgba(0, 0, 0, 0.6));
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  position: relative;
+}
+._3-weeks-ago {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.action {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._651-324-views {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+}
+._36-6545-likes {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+}
+._56-comments {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+}
+.love {
+  background: var(--white, #ffffff);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.icon-like {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(255, 105, 52, 0.25);
+}
+.heart {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.the-4-step-seo-framework-that-led-to-a-1000-increase-in-traffic-let-s-talk-about-blogging-and-seo {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: relative;
+  width: 521px;
+}
+.seo3 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.blogging3 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.google {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+._244-564-views {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(--regular-14-font-family, "VodafoneRg-Regular", sans-serif);
+  font-size: var(--regular-14-font-size, 14px);
+  line-height: var(--regular-14-line-height, 22px);
+  font-weight: var(--regular-14-font-weight, 400);
+  position: relative;
+}
+._10-920-likes {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(--regular-14-font-family, "VodafoneRg-Regular", sans-serif);
+  font-size: var(--regular-14-font-size, 14px);
+  line-height: var(--regular-14-line-height, 22px);
+  font-weight: var(--regular-14-font-weight, 400);
+  position: relative;
+}
+._184-comments {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: relative;
+}
+.heart2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.calling-all-designers-how-do-you-land-a-ui-ux-job-today {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: relative;
+  width: 521px;
+}
+.design3 {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.ui-ux-design {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.graphic-design {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.heart3 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.has-anyone-gone-from-being-an-admin-to-developer-with-little-to-no-coding-experience {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: relative;
+  width: 521px;
+}
+.developer {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.full-stack {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.software-developer {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: var(--inter-bold-10-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-10-font-size, 10px);
+  line-height: var(--inter-bold-10-line-height, 110%);
+  font-weight: var(--inter-bold-10-font-weight, 700);
+  position: relative;
+}
+.heart4 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
+}
+.right-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.podcasts {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 325px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main7 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 285px;
+  position: relative;
+}
+.podcasts2 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+}
+.podcasts3 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.image3 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(250, 137, 36, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(250, 137, 36, 0.06);
+  object-fit: cover;
+}
+.name4 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title4 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.selling-a-business-and-scaling-another-amidst-tragedy {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+  width: 193px;
+}
+.vector-17 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-michele-hansen {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.rectangle-55 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(55, 187, 203, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(55, 187, 203, 0.06);
+  object-fit: cover;
+}
+.mental-health-as-a-founder-and-the-importance-of-community {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+  width: 193px;
+}
+.vector-18 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-james-mc-kinven {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.rectangle-56 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(254, 149, 22, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(254, 149, 22, 0.06);
+  object-fit: cover;
+}
+.growing-to-8-5-k-mrr-in-1-year-marie-martens-tally-so {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+  width: 193px;
+}
+.vector-19 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-mahfuzul-nabil {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.rectangle-562 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(86, 83, 246, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(86, 83, 246, 0.06);
+  object-fit: cover;
+}
+.mental-health-and-bootstrapping-in-2022-with-rob-walling-of-tiny-se {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+  width: 193px;
+}
+.vector-192 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-dr-jubed {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.image4 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgba(2, 27, 109, 0.1);
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(2, 27, 109, 0.06);
+  object-fit: cover;
+}
+.money-happiness-and-productivity-as-a-solo-founder-with-pieter-levels {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(--inter-bold-12-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-12-font-size, 12px);
+  line-height: var(--inter-bold-12-line-height, 110%);
+  font-weight: var(--inter-bold-12-font-weight, 700);
+  position: relative;
+  width: 193px;
+}
+.vector-193 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-jesse-hanley {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+.vector-194 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.by-courtland-allen {
+  color: var(--input-typography, rgba(0, 0, 0, 0.6));
+  text-align: left;
+  font-family: var(
+    --manrope-medium-9-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-9-font-size, 9px);
+  font-weight: var(--manrope-medium-9-font-weight, 500);
+  position: relative;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="forum-community">
+    <div class="footer">
+      <div class="logo-and-desc">
+        <img class="logoo-2" src="forum/logoo-20.png" />
+        <div class="group-85">
+          <div
+            class="explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies"
+          >
+            Explore job opportunities tailored to your strengths. Take our career
+            test, upskill with mentoring, and connect with the best companies.
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="facebook">
+          <div class="rectangle-155"></div>
+          <div class="facebok">
+            <div class="rectangle-13"></div>
+            <img class="facebook-logo" src="forum/facebook-logo0.svg" />
+          </div>
+        </div>
+        <div class="twetter">
+          <div class="rectangle-14"></div>
+          <div class="rectangle-156"></div>
+          <img class="twitter-logo" src="forum/twitter-logo0.svg" />
+        </div>
+        <div class="linkedin">
+          <div class="rectangle-15"></div>
+          <div class="rectangle-157"></div>
+          <img class="linkedin-logo" src="forum/linkedin-logo0.svg" />
+        </div>
+        <div class="instagram">
+          <div class="rectangle-16"></div>
+          <div class="rectangle-158"></div>
+          <img class="instagram-logo" src="forum/instagram-logo0.svg" />
+        </div>
+      </div>
+      <div class="footer-list">
+        <div class="home">
+          <div class="home2">Home</div>
+          <div class="career-test">Career Test</div>
+          <div class="mentorship">Mentorship</div>
+          <div class="job-listing">Job Listing</div>
+          <div class="about-us">About Us</div>
+        </div>
+        <div class="resources">
+          <div class="resources2">Resources</div>
+          <div class="interview-prep">Interview Prep</div>
+          <div class="career-growth">Career Growth</div>
+          <div class="popular">Popular</div>
+          <div class="resume-tips">Resume Tips</div>
+        </div>
+        <div class="location">
+          <div class="contact-us">Contact Us</div>
+          <div class="support-findmycareer-com">support@findmycareer.com</div>
+        </div>
+      </div>
+      <div class="language2">Language</div>
+      <div class="div">
+        <div class="rectangle-2-2"></div>
+        <img class="chevron-down" src="forum/chevron-down0.svg" />
+        <div class="english">ENGLISH</div>
+      </div>
+      <div class="app-store-google-play">
+        <img class="googleplay" src="forum/googleplay0.svg" />
+        <img class="appstore" src="forum/appstore0.svg" />
+      </div>
+    </div>
+    <div class="header">
+      <img class="logoo-22" src="forum/logoo-21.png" />
+      <div class="frame-240">
+        <div class="home3"><a href="LandingComplete.html" style="color: #444255 ;">Home</a></div>
+        <div class="find-jobs"><a href="FindJobOneSite.html" style="color: #444255 ;">Find Jobs</a></div>
+        <div class="skill-career-tests">Skill &amp; career tests</div>
+        <div class="mentoring">Mentoring</div>
+        <div class="forum-communities">Forum Communities</div>
+      </div>
+      <div class="frame-239">
+        <div class="link-button">
+          <div class="complete-profile">Complete Profile</div>
+        </div>
+        <div class="link-button2">
+          <div class="take-career-test">Take Career Test</div>
+        </div>
+        <img class="profile-image" src="forum/profile-image0.png" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="side-bar">
+        <div class="sidebar">
+          <div class="main2">
+            <div class="new">
+              <div class="main3">
+                <div class="new-icon">
+                  <div class="ic-fiber-new-24-px-2">
+                    <div class="group-6">
+                      <img class="star-1" src="forum/star-10.svg" />
+                      <div class="new2">New</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="title">
+                  <div class="newest-and-recent">Newest and Recent</div>
+                  <div class="find-the-latest-update">Find the latest update</div>
+                </div>
+              </div>
+            </div>
+            <div class="popular2">
+              <div class="main3">
+                <div class="popular-icon">
+                  <div class="frame-15">
+                    <img class="group" src="forum/group0.svg" />
+                  </div>
+                </div>
+                <div class="title">
+                  <div class="popular-of-the-day">Popular of the day</div>
+                  <div class="shots-featured-today-by-curators">
+                    Shots featured today by curators
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="following">
+              <div class="main3">
+                <div class="following-icon">
+                  <img class="follow" src="forum/follow0.svg" />
+                </div>
+                <div class="title">
+                  <div class="n-ame">
+                    <div class="following2">Following</div>
+                    <div class="frame-16">
+                      <div class="_24">24</div>
+                    </div>
+                  </div>
+                  <div class="explore-from-your-favorite-person">
+                    Explore from your favorite person
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular-tags">
+          <div class="main4">
+            <div class="title2">
+              <div class="popular-tags2">Popular Tags</div>
+            </div>
+            <div class="tags">
+              <div class="tag">
+                <div class="icon">
+                  <div class="dev">
+                    <img class="vector" src="forum/vector0.svg" />
+                  </div>
+                </div>
+                <div class="name">
+                  <div class="javascript">#javascript</div>
+                  <div class="_82-645-posted-by-this-tag">
+                    82,645 Posted by this tag
+                  </div>
+                </div>
+              </div>
+              <div class="tag">
+                <div class="icon2">
+                  <img class="bitcoin" src="forum/bitcoin0.svg" />
+                </div>
+                <div class="name">
+                  <div class="bitcoin2">#bitcoin</div>
+                  <div class="_65-523-posted-trending">
+                    65,523 Posted • Trending
+                  </div>
+                </div>
+              </div>
+              <div class="tag">
+                <div class="icon">
+                  <img class="design" src="forum/design0.svg" />
+                </div>
+                <div class="name">
+                  <div class="design2">#design</div>
+                  <div class="_51-354-trending-in-bangladesh">
+                    51,354 • Trending in Bangladesh
+                  </div>
+                </div>
+              </div>
+              <div class="tag">
+                <div class="icon">
+                  <div class="blogging">
+                    <img class="vector2" src="forum/vector1.svg" />
+                  </div>
+                </div>
+                <div class="name">
+                  <div class="blogging2">#innovation</div>
+                  <div class="_48-029-posted-by-this-tag">
+                    48,029 Posted by this tag
+                  </div>
+                </div>
+              </div>
+              <div class="tag">
+                <div class="icon">
+                  <div class="tutorial">
+                    <img class="vector3" src="forum/vector2.svg" />
+                  </div>
+                </div>
+                <div class="name">
+                  <div class="tutorial2">#tutorial</div>
+                  <div class="_51-354-trending-in-bangladesh">
+                    51,354 • Trending in Bangladesh
+                  </div>
+                </div>
+              </div>
+              <div class="tag">
+                <div class="icon">
+                  <img class="seo" src="forum/seo0.svg" />
+                </div>
+                <div class="name">
+                  <div class="seo2">#business</div>
+                  <div class="_82-645-posted-by-this-tag">
+                    82,645 Posted by this tag
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main4">
+        <div class="creat-post">
+          <div class="main5">
+            <img class="profile-image2" src="forum/profile-image1.png" />
+            <div class="input-data">
+              <div class="let-s-share-what-going-on-your-mind">
+                Let’s share what going on your mind...
+              </div>
+            </div>
+            <div class="button">
+              <div class="create-post">Create Post</div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="main6">
+            <img class="image" src="forum/image0.png" />
+            <div class="data">
+              <div class="data2">
+                <div class="title3">
+                  <div class="what-is-the-best-sites-to-find-job-in-2025">
+                    What is the best sites to find job in 2025?
+                  </div>
+                  <div class="tags2">
+                    <div class="tag2">
+                      <div class="job">job</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="life">life</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="recommendation">recommendation</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="avatars">
+                    <img class="image2" src="forum/image1.png" />
+                  </div>
+                  <div class="name2">
+                    <div class="name">
+                      <div class="name3">
+                        <div class="ginny-weasley">Ginny Weasley</div>
+                        <div class="ellipse-30"></div>
+                      </div>
+                      <div class="_3-weeks-ago">3 weeks ago</div>
+                    </div>
+                    <div class="action">
+                      <div class="_651-324-views">651,324 Views</div>
+                      <div class="_36-6545-likes">36,6545 Likes</div>
+                      <div class="_56-comments">56 comments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="love">
+                <div class="icon-like">
+                  <img class="heart" src="forum/heart0.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="main6">
+            <img class="image" src="forum/image2.png" />
+            <div class="data">
+              <div class="data2">
+                <div class="title3">
+                  <div
+                    class="the-4-step-seo-framework-that-led-to-a-1000-increase-in-traffic-let-s-talk-about-blogging-and-seo"
+                  >
+                    The 4-step SEO framework that led to a 1000% increase in
+                    traffic. Let’s talk about blogging and SEO...
+                  </div>
+                  <div class="tags2">
+                    <div class="tag2">
+                      <div class="seo3">seo</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="blogging3">blogging</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="google">google</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="avatars">
+                    <img class="image2" src="forum/image3.png" />
+                  </div>
+                  <div class="name2">
+                    <div class="name">
+                      <div class="name3">
+                        <div class="ginny-weasley">Ginny Weasley</div>
+                        <div class="ellipse-30"></div>
+                      </div>
+                      <div class="_3-weeks-ago">3 weeks ago</div>
+                    </div>
+                    <div class="action">
+                      <div class="_244-564-views">244,564 Views</div>
+                      <div class="_10-920-likes">10,920 Likes</div>
+                      <div class="_184-comments">184 comments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="love">
+                <div class="icon-like">
+                  <img class="heart2" src="forum/heart1.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="main6">
+            <img class="image" src="forum/image4.png" />
+            <div class="data">
+              <div class="data2">
+                <div class="title3">
+                  <div
+                    class="calling-all-designers-how-do-you-land-a-ui-ux-job-today"
+                  >
+                    Calling All Designers: How Do You Land a UI/UX job Today?
+                  </div>
+                  <div class="tags2">
+                    <div class="tag2">
+                      <div class="design3">design</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="ui-ux-design">ui/ux design</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="graphic-design">graphic design</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="avatars">
+                    <img class="image2" src="forum/image5.png" />
+                  </div>
+                  <div class="name2">
+                    <div class="name">
+                      <div class="name3">
+                        <div class="ginny-weasley">Ginny Weasley</div>
+                        <div class="ellipse-30"></div>
+                      </div>
+                      <div class="_3-weeks-ago">3 weeks ago</div>
+                    </div>
+                    <div class="action">
+                      <div class="_244-564-views">244,564 Views</div>
+                      <div class="_10-920-likes">10,920 Likes</div>
+                      <div class="_184-comments">184 comments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="love">
+                <div class="icon-like">
+                  <img class="heart3" src="forum/heart2.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="main6">
+            <img class="image" src="forum/image6.png" />
+            <div class="data">
+              <div class="data2">
+                <div class="title3">
+                  <div
+                    class="has-anyone-gone-from-being-an-admin-to-developer-with-little-to-no-coding-experience"
+                  >
+                    Has anyone gone from being an Admin to Developer with little
+                    to no coding experience?
+                  </div>
+                  <div class="tags2">
+                    <div class="tag2">
+                      <div class="developer">developer</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="full-stack">full-stack</div>
+                    </div>
+                    <div class="tag2">
+                      <div class="software-developer">software developer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="avatars">
+                    <img class="image2" src="forum/image7.png" />
+                  </div>
+                  <div class="name2">
+                    <div class="name">
+                      <div class="name3">
+                        <div class="ginny-weasley">Ginny Weasley</div>
+                        <div class="ellipse-30"></div>
+                      </div>
+                      <div class="_3-weeks-ago">3 weeks ago</div>
+                    </div>
+                    <div class="action">
+                      <div class="_244-564-views">244,564 Views</div>
+                      <div class="_10-920-likes">10,920 Likes</div>
+                      <div class="_184-comments">184 comments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="love">
+                <div class="icon-like">
+                  <img class="heart4" src="forum/heart3.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-bar">
+        <div class="podcasts">
+          <div class="main7">
+            <div class="title2">
+              <div class="podcasts2">Popular Communities</div>
+            </div>
+            <div class="podcasts3">
+              <img class="image3" src="forum/image8.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="selling-a-business-and-scaling-another-amidst-tragedy"
+                  >
+                    #techsupport
+                  </div>
+                  <img class="vector-17" src="forum/vector-170.svg" />
+                </div>
+                <div class="by-michele-hansen">5,455,207 members</div>
+              </div>
+            </div>
+            <div class="podcasts3">
+              <img class="rectangle-55" src="forum/rectangle-550.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="mental-health-as-a-founder-and-the-importance-of-community"
+                  >
+                    #businesscase
+                  </div>
+                  <img class="vector-18" src="forum/vector-180.svg" />
+                </div>
+                <div class="by-james-mc-kinven">2,789,256 members</div>
+              </div>
+            </div>
+            <div class="podcasts3">
+              <img class="rectangle-56" src="forum/rectangle-560.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="growing-to-8-5-k-mrr-in-1-year-marie-martens-tally-so"
+                  >
+                    #bitcoinsClub
+                  </div>
+                  <img class="vector-19" src="forum/vector-190.svg" />
+                </div>
+                <div class="by-mahfuzul-nabil">703,894 members</div>
+              </div>
+            </div>
+            <div class="podcasts3">
+              <img class="rectangle-562" src="forum/rectangle-561.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="mental-health-and-bootstrapping-in-2022-with-rob-walling-of-tiny-se"
+                  >
+                    #askAboutDesigns
+                  </div>
+                  <img class="vector-192" src="forum/vector-191.svg" />
+                </div>
+                <div class="by-dr-jubed">621,147 members</div>
+              </div>
+            </div>
+            <div class="podcasts3">
+              <img class="image4" src="forum/image9.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="money-happiness-and-productivity-as-a-solo-founder-with-pieter-levels"
+                  >
+                    #learnProgramming
+                  </div>
+                  <img class="vector-193" src="forum/vector-192.svg" />
+                </div>
+                <div class="by-jesse-hanley">522,126 members</div>
+              </div>
+            </div>
+            <div class="podcasts3">
+              <img class="image4" src="forum/image10.png" />
+              <div class="name4">
+                <div class="title4">
+                  <div
+                    class="mental-health-as-a-founder-and-the-importance-of-community"
+                  >
+                    #studyFullstack
+                  </div>
+                  <img class="vector-194" src="forum/vector-193.svg" />
+                </div>
+                <div class="by-courtland-allen">444,894 members</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
