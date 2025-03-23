@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .premium-consultation,
+.premium-consultation * {
+  box-sizing: border-box;
+}
+.premium-consultation {
+  background: #ffffff;
+  height: 2485px;
+  position: relative;
+  overflow: hidden;
+}
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(106, 161, 166, 1) 0.0999748706817627%,
+    rgba(50, 90, 94, 0.54) 100%
+  );
+  width: 1442px;
+  height: 541px;
+  position: absolute;
+  left: calc(50% - 722px);
+  bottom: 0px;
+  overflow: hidden;
+}
+.logo-and-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 424px;
+  position: absolute;
+  left: 129px;
+  top: 60px;
+}
+.logoo-2 {
+  flex-shrink: 0;
+  width: 188px;
+  height: 119px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 188/119;
+}
+.group-85 {
+  flex-shrink: 0;
+  width: 424px;
+  height: 72px;
+  position: static;
+}
+.explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 134px;
+  width: 424px;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 302px;
+}
+.facebook {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-155 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.facebok {
+  width: 24px;
+  height: 24px;
+  position: static;
+}
+.rectangle-13 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.facebook-logo {
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  overflow: visible;
+}
+.twetter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-14 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 52px;
+  top: 4px;
+}
+.rectangle-156 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 48px;
+  top: 0px;
+}
+.twitter-logo {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 55px;
+  top: 9px;
+  overflow: visible;
+}
+.linkedin {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-15 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 100px;
+  top: 4px;
+}
+.rectangle-157 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 96px;
+  top: 0px;
+}
+.linkedin-logo {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 104px;
+  top: 8px;
+  overflow: visible;
+}
+.instagram {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: static;
+}
+.rectangle-16 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  top: 4px;
+}
+.rectangle-158 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 144px;
+  top: 0px;
+}
+.instagram-logo {
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  left: 152px;
+  top: 7px;
+  overflow: visible;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 729px;
+  top: 94px;
+}
+.home {
+  flex-shrink: 0;
+  width: 79px;
+  height: 171px;
+  position: static;
+}
+.home2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.career-test {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 83px;
+}
+.mentorship {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 115px;
+}
+.job-listing {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 147px;
+}
+.about-us {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 0px;
+  top: 51px;
+}
+.resources {
+  flex-shrink: 0;
+  width: 99px;
+  height: 171px;
+  position: static;
+}
+.resources2 {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 141px;
+  top: 0px;
+}
+.interview-prep {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 83px;
+}
+.career-growth {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 115px;
+}
+.popular {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 147px;
+}
+.resume-tips {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 141px;
+  top: 51px;
+}
+.location {
+  flex-shrink: 0;
+  width: 188px;
+  height: 70px;
+  position: static;
+}
+.contact-us {
+  color: var(--white-color, #ffffff);
+  text-align: left;
+  font-family: "Manrope-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  position: absolute;
+  left: 302px;
+  top: 0px;
+}
+.support-findmycareer-com {
+  color: var(--light, #f4f4f4);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-14-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-14-font-size, 14px);
+  line-height: var(--manrope-medium-14-line-height, 24px);
+  letter-spacing: var(--manrope-medium-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-medium-14-font-weight, 500);
+  position: absolute;
+  left: 302px;
+  top: 46px;
+}
+.language {
+  position: absolute;
+  inset: 0;
+}
+.language2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 23.26%;
+  left: 71.04%;
+  width: 5.7%;
+  bottom: 50.19%;
+  top: 43.81%;
+  height: 6%;
+}
+.div {
+  width: 205.03px;
+  height: 43.28px;
+  position: static;
+}
+.rectangle-2-2 {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #f0f0f0;
+  border-width: 1px;
+  width: 14.22%;
+  height: 8%;
+  position: absolute;
+  right: 14.74%;
+  left: 71.04%;
+  bottom: 39.69%;
+  top: 52.31%;
+}
+.chevron-down {
+  width: 0.74%;
+  height: 3.5%;
+  position: absolute;
+  right: 15.53%;
+  left: 83.73%;
+  bottom: 41.94%;
+  top: 54.56%;
+  overflow: visible;
+}
+.english {
+  color: #181818;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: absolute;
+  right: 21.38%;
+  left: 71.98%;
+  width: 6.64%;
+  bottom: 40.69%;
+  top: 53.31%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app-store-google-play {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 129px;
+  top: 388px;
+}
+.googleplay {
+  flex-shrink: 0;
+  width: 153.54px;
+  height: 43.2px;
+  position: relative;
+  overflow: visible;
+}
+.appstore {
+  flex-shrink: 0;
+  width: 191.93px;
+  height: 54px;
+  position: relative;
+  overflow: visible;
+}
+.header {
+  padding: 18px 79px 18px 79px;
+  display: flex;
+  flex-direction: row;
+  gap: 94px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+}
+.logoo-22 {
+  flex-shrink: 0;
+  width: 113.67px;
+  height: 72.37px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 113.67/72.37;
+}
+.frame-240 {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 19px;
+  position: relative;
+}
+.home3 {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.find-jobs {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.skill-career-tests {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.mentoring {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.forum-communities {
+  color: var(--navbar, #444255);
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.frame-239 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-button {
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.complete-profile {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.link-button2 {
+  background: var(--accent, #f4a261);
+  border-radius: 5px;
+  padding: 10px 21px 10px 21px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.take-career-test {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-14-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-14-font-size, 14px);
+  line-height: var(--manrope-bold-14-line-height, 24px);
+  letter-spacing: var(--manrope-bold-14-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-14-font-weight, 700);
+  position: relative;
+}
+.profile-image {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  object-fit: cover;
+}
+.mentoring-section {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 61px;
+  top: 166px;
+}
+.button {
+  flex-shrink: 0;
+  width: 310px;
+  height: 99px;
+  position: relative;
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.vector {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.update {
+  color: var(--typography-soft, #35485b);
+  text-align: center;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 26.46%;
+  top: 25.05%;
+  height: 48.48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector2 {
+  flex-shrink: 0;
+  width: 1.37%;
+  height: 9.09%;
+  position: absolute;
+  right: 78.53%;
+  left: 20.11%;
+  bottom: 31.31%;
+  top: 59.6%;
+  transform: translate(-0.9px, -18.9px);
+  overflow: visible;
+}
+.vector3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.update2 {
+  color: var(--typography-soft, #35485b);
+  text-align: center;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 38.59%;
+  top: 37.17%;
+  height: 24.24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector4 {
+  flex-shrink: 0;
+  width: 1.37%;
+  height: 9.09%;
+  position: absolute;
+  right: 52.35%;
+  left: 46.28%;
+  bottom: 31.31%;
+  top: 59.6%;
+  transform: translate(-0.9px, -18.9px);
+  overflow: visible;
+}
+.button2 {
+  flex-shrink: 0;
+  width: 310px;
+  height: 99px;
+  position: relative;
+}
+.vector5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.vector6 {
+  flex-shrink: 0;
+  width: 1.37%;
+  height: 9.09%;
+  position: absolute;
+  right: 27.16%;
+  left: 71.47%;
+  bottom: 31.31%;
+  top: 59.6%;
+  transform: translate(-0.9px, -18.9px);
+  overflow: visible;
+}
+.vector7 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.update3 {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 38.59%;
+  top: 37.17%;
+  height: 24.24%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector8 {
+  flex-shrink: 0;
+  width: 1.37%;
+  height: 9.09%;
+  position: absolute;
+  right: 1.63%;
+  left: 97%;
+  bottom: 44.95%;
+  top: 45.96%;
+  transform: translate(-0.9px, -0.9px);
+  overflow: visible;
+}
+.mentors {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 109px;
+  top: 996px;
+}
+.mentor-1 {
+  flex-shrink: 0;
+  width: 271px;
+  height: 371px;
+  position: static;
+}
+.rectangle-10 {
+  background: var(--white, #ffffff);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e9eaf0;
+  border-width: 1px;
+  width: 271px;
+  height: 371px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.content {
+  width: 270px;
+  height: 361px;
+  position: static;
+}
+.rectangle-162 {
+  background: #bdc8d4;
+  border-radius: 20px;
+  width: 270px;
+  height: 193px;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+}
+.group-11 {
+  width: 242px;
+  height: 167px;
+  position: static;
+}
+.group-7 {
+  width: 129px;
+  height: 18px;
+  position: static;
+}
+.group-6 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 17px;
+  top: 231px;
+  overflow: visible;
+}
+._150 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  left: 114px;
+  top: 229px;
+}
+.group-10 {
+  width: 230px;
+  height: 90px;
+  position: static;
+}
+.sirius-black {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 19px;
+  top: 194px;
+}
+.has-7-years-of-experience-building-scalable-web-applications {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 19px;
+  top: 252px;
+  width: 230px;
+}
+.group-8 {
+  width: 242px;
+  height: 46px;
+  position: static;
+}
+.rectangle-152 {
+  background: var(--accent, #f4a261);
+  border-radius: 30px;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  left: 16px;
+  top: 315px;
+}
+.book-mentor {
+  color: #3a256d;
+  text-align: center;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: absolute;
+  left: 39px;
+  top: 326px;
+  width: 193px;
+}
+.group-9 {
+  width: 113px;
+  height: 11px;
+  position: static;
+}
+.ellipse-3 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 19px;
+  top: 295px;
+}
+.senior-front-end-engineer {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 35px;
+  top: 294px;
+}
+.rectangle-17 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 16.98px;
+  width: 30.57px;
+  height: 30px;
+  position: absolute;
+  left: 229px;
+  top: 170px;
+}
+._3-slot {
+  color: #e5e5e5;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 6.792452812194824px;
+  font-weight: 700;
+  position: absolute;
+  left: 234.66px;
+  top: 180.75px;
+  width: 19.25px;
+  height: 10.19px;
+}
+.mentor-2 {
+  flex-shrink: 0;
+  width: 271px;
+  height: 371px;
+  position: static;
+}
+.rectangle-102 {
+  background: var(--white, #ffffff);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e9eaf0;
+  border-width: 1px;
+  width: 271px;
+  height: 371px;
+  position: absolute;
+  left: 317px;
+  top: 0px;
+}
+.rectangle-163 {
+  background: #bdc8d4;
+  border-radius: 20px;
+  width: 270px;
+  height: 193px;
+  position: absolute;
+  left: 318px;
+  top: 0px;
+}
+.group-72 {
+  width: 123px;
+  height: 18px;
+  position: static;
+}
+.group-62 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 334px;
+  top: 231px;
+  overflow: visible;
+}
+._78 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  left: 431px;
+  top: 229px;
+}
+.group-102 {
+  width: 222px;
+  height: 90px;
+  position: static;
+}
+.albus-dumbledore {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 336px;
+  top: 194px;
+}
+.worked-at-top-tech-companies-helping-businesses-leverage-ai-and-big-data {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 336px;
+  top: 252px;
+  width: 222px;
+}
+.rectangle-153 {
+  background: var(--accent, #f4a261);
+  border-radius: 30px;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  left: 333px;
+  top: 315px;
+}
+.book-mentor2 {
+  color: #3a256d;
+  text-align: center;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: absolute;
+  left: 356px;
+  top: 326px;
+  width: 193px;
+}
+.group-92 {
+  width: 117px;
+  height: 11px;
+  position: static;
+}
+.ellipse-32 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 336px;
+  top: 295px;
+}
+.data-scientist-ai-specialist {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 352px;
+  top: 294px;
+}
+.rectangle-172 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 16.98px;
+  width: 30.57px;
+  height: 30px;
+  position: absolute;
+  left: 546px;
+  top: 170px;
+}
+._3-slot2 {
+  color: #e5e5e5;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 6.792452812194824px;
+  font-weight: 700;
+  position: absolute;
+  left: 551.66px;
+  top: 180.75px;
+  width: 19.25px;
+  height: 10.19px;
+}
+.mentor-3 {
+  flex-shrink: 0;
+  width: 271px;
+  height: 371px;
+  position: static;
+}
+.rectangle-103 {
+  background: var(--white, #ffffff);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e9eaf0;
+  border-width: 1px;
+  width: 271px;
+  height: 371px;
+  position: absolute;
+  left: 634px;
+  top: 0px;
+}
+.rectangle-164 {
+  background: #bdc8d4;
+  border-radius: 20px;
+  width: 270px;
+  height: 193px;
+  position: absolute;
+  left: 635px;
+  top: 0px;
+}
+.group-63 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 651px;
+  top: 231px;
+  overflow: visible;
+}
+._134 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  left: 748px;
+  top: 229px;
+}
+.draco-malfoy {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 653px;
+  top: 194px;
+}
+._6-years-in-product-management-he-helps-teams-build-impactful-products {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 653px;
+  top: 252px;
+  width: 230px;
+}
+.rectangle-154 {
+  background: var(--accent, #f4a261);
+  border-radius: 30px;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  left: 650px;
+  top: 315px;
+}
+.book-mentor3 {
+  color: #3a256d;
+  text-align: center;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: absolute;
+  left: 673px;
+  top: 326px;
+  width: 193px;
+}
+.group-93 {
+  width: 80px;
+  height: 11px;
+  position: static;
+}
+.ellipse-33 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 653px;
+  top: 295px;
+}
+.product-manager {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 669px;
+  top: 294px;
+}
+.rectangle-173 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 16.98px;
+  width: 30.57px;
+  height: 30px;
+  position: absolute;
+  left: 863px;
+  top: 170px;
+}
+._3-slot3 {
+  color: #e5e5e5;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 6.792452812194824px;
+  font-weight: 700;
+  position: absolute;
+  left: 868.66px;
+  top: 180.75px;
+  width: 19.25px;
+  height: 10.19px;
+}
+.mentor-4 {
+  flex-shrink: 0;
+  width: 271px;
+  height: 371px;
+  position: static;
+}
+.rectangle-104 {
+  background: var(--white, #ffffff);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #e9eaf0;
+  border-width: 1px;
+  width: 271px;
+  height: 371px;
+  position: absolute;
+  left: 951px;
+  top: 0px;
+}
+.rectangle-165 {
+  background: #bdc8d4;
+  border-radius: 20px;
+  width: 270px;
+  height: 193px;
+  position: absolute;
+  left: 952px;
+  top: 0px;
+}
+.group-64 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 968px;
+  top: 231px;
+  overflow: visible;
+}
+._1502 {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  left: 1065px;
+  top: 229px;
+}
+.james-potter {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 970px;
+  top: 194px;
+}
+.james-has-spent-a-decade-protecting-companies-from-cyber-threats {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 970px;
+  top: 252px;
+  width: 230px;
+}
+.rectangle-159 {
+  background: var(--accent, #f4a261);
+  border-radius: 30px;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  left: 967px;
+  top: 315px;
+}
+.book-mentor4 {
+  color: #3a256d;
+  text-align: center;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: absolute;
+  left: 990px;
+  top: 326px;
+  width: 193px;
+}
+.group-94 {
+  width: 103px;
+  height: 11px;
+  position: static;
+}
+.ellipse-34 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 970px;
+  top: 295px;
+}
+.cybersecurity-engineer {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 986px;
+  top: 294px;
+}
+.rectangle-174 {
+  background: var(--secondary, #2a9d8f);
+  border-radius: 16.98px;
+  width: 30.57px;
+  height: 30px;
+  position: absolute;
+  left: 1180px;
+  top: 170px;
+}
+._3-slot4 {
+  color: #e5e5e5;
+  text-align: left;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 6.792452812194824px;
+  font-weight: 700;
+  position: absolute;
+  left: 1185.66px;
+  top: 180.75px;
+  width: 19.25px;
+  height: 10.19px;
+}
+.mentors2 {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 108px;
+  top: 1403px;
+}
+.group-65 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 17px;
+  top: 231px;
+  overflow: visible;
+}
+.group-103 {
+  width: 236px;
+  height: 90px;
+  position: static;
+}
+.hermione-granger {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 19px;
+  top: 194px;
+}
+.has-designed-interfaces-for-saa-s-products-and-mobile-apps {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 19px;
+  top: 252px;
+  width: 236px;
+}
+.group-95 {
+  width: 123px;
+  height: 11px;
+  position: static;
+}
+.ui-ux-designer-researcher {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 35px;
+  top: 294px;
+}
+.group-66 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 334px;
+  top: 231px;
+  overflow: visible;
+}
+.voldemort {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 336px;
+  top: 194px;
+}
+._9-years-in-cloud-computing-he-navigate-cloud-technologies {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 336px;
+  top: 252px;
+  width: 230px;
+}
+.group-96 {
+  width: 111px;
+  height: 11px;
+  position: static;
+}
+.cloud-solutions-architect {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 352px;
+  top: 294px;
+}
+.group-67 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 651px;
+  top: 231px;
+  overflow: visible;
+}
+.group-104 {
+  width: 232px;
+  height: 90px;
+  position: static;
+}
+.luna-lovegood {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 653px;
+  top: 194px;
+}
+.specializes-in-organic-growth-and-google-ads {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 653px;
+  top: 252px;
+  width: 232px;
+}
+.group-97 {
+  width: 79px;
+  height: 11px;
+  position: static;
+}
+.digital-marketing {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 669px;
+  top: 294px;
+}
+.group-68 {
+  width: 88px;
+  height: 13px;
+  position: absolute;
+  left: 968px;
+  top: 231px;
+  overflow: visible;
+}
+.group-105 {
+  width: 238px;
+  height: 90px;
+  position: static;
+}
+.newt-scamander {
+  color: var(--primary, #0077b6);
+  text-align: left;
+  font-family: var(--manrope-bold-24-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-24-font-size, 24px);
+  line-height: var(--manrope-bold-24-line-height, 36px);
+  letter-spacing: var(--manrope-bold-24-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-24-font-weight, 700);
+  position: absolute;
+  left: 970px;
+  top: 194px;
+}
+.has-led-engineering-teams-in-building-scalable-applications {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: var(
+    --manrope-medium-12-font-family,
+    "Manrope-Medium",
+    sans-serif
+  );
+  font-size: var(--manrope-medium-12-font-size, 12px);
+  font-weight: var(--manrope-medium-12-font-weight, 500);
+  position: absolute;
+  left: 970px;
+  top: 252px;
+  width: 238px;
+}
+.group-98 {
+  width: 92px;
+  height: 11px;
+  position: static;
+}
+.full-stack-developer {
+  color: var(--typography-soft, #35485b);
+  text-align: left;
+  font-family: "Manrope-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  left: 986px;
+  top: 294px;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 510px;
+  top: 1810px;
+}
+.button3 {
+  border-radius: 100px;
+  opacity: 0.5;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.arrow-left {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.arrow-left2 {
+  width: 68.75%;
+  height: 56.25%;
+  position: absolute;
+  right: 15.62%;
+  left: 15.62%;
+  bottom: 21.88%;
+  top: 21.88%;
+  overflow: visible;
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.pagination2 {
+  border-radius: 100px;
+  padding: 14px 0px 14px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._01 {
+  color: var(--gray-900, #1d2026);
+  text-align: center;
+  font-family: var(--body-medium-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 14px);
+  line-height: var(--body-medium-500-line-height, 20px);
+  letter-spacing: var(--body-medium-500-letter-spacing, -0.01em);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+  width: 48px;
+}
+.pagination3 {
+  background: var(--primary, #0077b6);
+  border-radius: 100px;
+  padding: 14px 0px 14px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._012 {
+  color: var(--gray-white, #ffffff);
+  text-align: center;
+  font-family: var(--body-medium-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 14px);
+  line-height: var(--body-medium-500-line-height, 20px);
+  letter-spacing: var(--body-medium-500-letter-spacing, -0.01em);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+  width: 48px;
+}
+.pagination4 {
+  background: #e8e9ea;
+  border-radius: 100px;
+  padding: 14px 0px 14px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._013 {
+  color: var(--primary, #0077b6);
+  text-align: center;
+  font-family: var(--body-medium-500-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 14px);
+  line-height: var(--body-medium-500-line-height, 20px);
+  letter-spacing: var(--body-medium-500-letter-spacing, -0.01em);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+  width: 48px;
+}
+.button4 {
+  background: #e8e9ea;
+  border-radius: 100px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.arrow-right {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.arrow-right2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.adbance-filter {
+  background: var(--gray-scale-white, #ffffff);
+  border-radius: 8px;
+  border-style: solid;
+  border-color: var(--gray-100, #e4e5e8);
+  border-width: 1px;
+  padding: 0px 12px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 406px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1222px;
+  height: 75px;
+  position: absolute;
+  left: 109px;
+  top: 885px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 44, 109, 0.04);
+}
+.input-field {
+  background: var(--gray-00, #ffffff);
+  border-radius: 5px;
+  padding: 10px;
+  flex-shrink: 0;
+  width: 667px;
+  height: 48px;
+  position: relative;
+}
+.search-by-name-specification {
+  color: var(--gray-400, #9199a3);
+  text-align: left;
+  font-family: var(--inter-medium-18-font-family, "Inter-Medium", sans-serif);
+  font-size: var(--inter-medium-18-font-size, 18px);
+  line-height: var(--inter-medium-18-line-height, 28px);
+  font-weight: var(--inter-medium-18-font-weight, 500);
+  position: absolute;
+  left: 101px;
+  top: calc(50% - 12px);
+  width: 441px;
+}
+.fi-search {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 45px;
+  top: calc(50% - 10px);
+  overflow: visible;
+}
+.frame-671 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button5 {
+  background: var(--gray-50, #f1f2f4);
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.sliders {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.sliders2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.primary {
+  color: var(--gray-900, #18191c);
+  text-align: left;
+  font-family: var(--button-button-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--button-button-font-size, 16px);
+  line-height: var(--button-button-line-height, 24px);
+  font-weight: var(--button-button-font-weight, 600);
+  position: relative;
+}
+.devider {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--gray-scale-50, #edeff5);
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 72px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.mentor-headlines {
+  background: var(--neutrals-0, #ffffff);
+  width: 1440px;
+  height: 558px;
+  position: absolute;
+  left: 0px;
+  top: 307px;
+  overflow: hidden;
+}
+.cta-section {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-2742 {
+  width: 1192px;
+  height: 414px;
+  position: absolute;
+  left: 124px;
+  top: 72px;
+  overflow: visible;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 214px;
+  top: 157px;
+}
+.find-your-perfect-mentor-accelerate-your-career {
+  text-align: left;
+  font-family: var(--inter-bold-48-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-48-font-size, 48px);
+  line-height: var(--inter-bold-48-line-height, 55px);
+  font-weight: var(--inter-bold-48-font-weight, 700);
+  position: relative;
+  width: 456px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.find-your-perfect-mentor-accelerate-your-career-span {
+  color: var(--white, #ffffff);
+  font-family: var(--inter-bold-48-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-48-font-size, 48px);
+  line-height: var(--inter-bold-48-line-height, 55px);
+  font-weight: var(--inter-bold-48-font-weight, 700);
+}
+.find-your-perfect-mentor-accelerate-your-career-span2 {
+  color: var(--accent, #f4a261);
+  font-family: var(--inter-bold-48-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-48-font-size, 48px);
+  line-height: var(--inter-bold-48-line-height, 55px);
+  font-weight: var(--inter-bold-48-font-weight, 700);
+}
+.get-personalized-guidance-from-industry-experts-connect-with-mentors-who-can-help-you-sharpen-your-skills-land-your-dream-job-and-grow-professionally {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--manrope-bold-16-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-16-font-size, 16px);
+  line-height: var(--manrope-bold-16-line-height, 24px);
+  letter-spacing: var(--manrope-bold-16-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-16-font-weight, 700);
+  position: relative;
+  width: 456px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._2 {
+  width: 523px;
+  height: 520px;
+  position: absolute;
+  left: 702px;
+  top: 38px;
+  object-fit: cover;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="premium-consultation">
+    <div class="footer">
+      <div class="logo-and-desc">
+        <img class="logoo-2" src="premconsultation/logoo-20.png" />
+        <div class="group-85">
+          <div
+            class="explore-job-opportunities-tailored-to-your-strengths-take-our-career-test-upskill-with-mentoring-and-connect-with-the-best-companies"
+          >
+            Explore job opportunities tailored to your strengths. Take our career
+            test, upskill with mentoring, and connect with the best companies.
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="facebook">
+          <div class="rectangle-155"></div>
+          <div class="facebok">
+            <div class="rectangle-13"></div>
+            <img class="facebook-logo" src="premconsultation/facebook-logo0.svg" />
+          </div>
+        </div>
+        <div class="twetter">
+          <div class="rectangle-14"></div>
+          <div class="rectangle-156"></div>
+          <img class="twitter-logo" src="premconsultation/twitter-logo0.svg" />
+        </div>
+        <div class="linkedin">
+          <div class="rectangle-15"></div>
+          <div class="rectangle-157"></div>
+          <img class="linkedin-logo" src="premconsultation/linkedin-logo0.svg" />
+        </div>
+        <div class="instagram">
+          <div class="rectangle-16"></div>
+          <div class="rectangle-158"></div>
+          <img class="instagram-logo" src="premconsultation/instagram-logo0.svg" />
+        </div>
+      </div>
+      <div class="footer-list">
+        <div class="home">
+          <div class="home2">Home</div>
+          <div class="career-test">Career Test</div>
+          <div class="mentorship">Mentorship</div>
+          <div class="job-listing">Job Listing</div>
+          <div class="about-us">About Us</div>
+        </div>
+        <div class="resources">
+          <div class="resources2">Resources</div>
+          <div class="interview-prep">Interview Prep</div>
+          <div class="career-growth">Career Growth</div>
+          <div class="popular">Popular</div>
+          <div class="resume-tips">Resume Tips</div>
+        </div>
+        <div class="location">
+          <div class="contact-us">Contact Us</div>
+          <div class="support-findmycareer-com">support@findmycareer.com</div>
+        </div>
+      </div>
+      <div class="language2">Language</div>
+      <div class="div">
+        <div class="rectangle-2-2"></div>
+        <img class="chevron-down" src="premconsultation/chevron-down0.svg" />
+        <div class="english">ENGLISH</div>
+      </div>
+      <div class="app-store-google-play">
+        <img class="googleplay" src="premconsultation/googleplay0.svg" />
+        <img class="appstore" src="premconsultation/appstore0.svg" />
+      </div>
+    </div>
+    <div class="header">
+      <img class="logoo-22" src="premconsultation/logoo-21.png" />
+      <div class="frame-240">
+        <div class="home3">Home</div>
+        <div class="find-jobs">Find Jobs</div>
+        <div class="skill-career-tests">Skill &amp; career tests</div>
+        <div class="mentoring">Mentoring</div>
+        <div class="forum-communities">Forum Communities</div>
+      </div>
+      <div class="frame-239">
+        <div class="link-button">
+          <div class="complete-profile">Complete Profile</div>
+        </div>
+        <div class="link-button2">
+          <div class="take-career-test">Take Career Test</div>
+        </div>
+        <img class="profile-image" src="premconsultation/profile-image0.png" />
+      </div>
+    </div>
+    <div class="mentoring-section">
+      <div class="button">
+        <img class="vector" src="premconsultation/vector0.svg" />
+        <div class="update">Interview Mentoring</div>
+      </div>
+      <img class="vector2" src="premconsultation/vector1.svg" />
+      <div class="button">
+        <img class="vector3" src="premconsultation/vector2.svg" />
+        <div class="update2">CV Mentoring</div>
+      </div>
+      <img class="vector4" src="premconsultation/vector3.svg" />
+      <div class="button2">
+        <img class="vector5" src="premconsultation/vector4.svg" />
+        <div class="update">Soft Skill Bootcamp</div>
+      </div>
+      <img class="vector6" src="premconsultation/vector5.svg" />
+      <div class="button">
+        <img class="vector7" src="premconsultation/vector6.svg" />
+        <div class="update3">Consultation</div>
+      </div>
+      <img class="vector8" src="premconsultation/vector7.svg" />
+    </div>
+    <div class="mentors">
+      <div class="mentor-1">
+        <div class="rectangle-10"></div>
+        <div class="content">
+          <div class="rectangle-162"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-6" src="premconsultation/group-60.svg" />
+              <div class="_150">(150)</div>
+            </div>
+            <div class="group-10">
+              <div class="sirius-black">Sirius Black</div>
+              <div
+                class="has-7-years-of-experience-building-scalable-web-applications"
+              >
+                Has 7+ years of experience building scalable web applications.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-152"></div>
+              <div class="book-mentor">Book mentor</div>
+            </div>
+            <div class="group-9">
+              <div class="ellipse-3"></div>
+              <div class="senior-front-end-engineer">
+                Senior Front-End Engineer
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-17"></div>
+          <div class="_3-slot">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-2">
+        <div class="rectangle-102"></div>
+        <div class="content">
+          <div class="rectangle-163"></div>
+          <div class="group-11">
+            <div class="group-72">
+              <img class="group-62" src="premconsultation/group-61.svg" />
+              <div class="_78">(78)</div>
+            </div>
+            <div class="group-102">
+              <div class="albus-dumbledore">Albus Dumbledore</div>
+              <div
+                class="worked-at-top-tech-companies-helping-businesses-leverage-ai-and-big-data"
+              >
+                Worked at top tech companies, helping businesses leverage AI and
+                big data.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-153"></div>
+              <div class="book-mentor2">Book mentor</div>
+            </div>
+            <div class="group-92">
+              <div class="ellipse-32"></div>
+              <div class="data-scientist-ai-specialist">
+                Data Scientist, AI Specialist
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-172"></div>
+          <div class="_3-slot2">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-3">
+        <div class="rectangle-103"></div>
+        <div class="content">
+          <div class="rectangle-164"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-63" src="premconsultation/group-62.svg" />
+              <div class="_134">(134)</div>
+            </div>
+            <div class="group-10">
+              <div class="draco-malfoy">Draco Malfoy</div>
+              <div
+                class="_6-years-in-product-management-he-helps-teams-build-impactful-products"
+              >
+                6+ years in product management, He helps teams build impactful
+                products.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-154"></div>
+              <div class="book-mentor3">Book mentor</div>
+            </div>
+            <div class="group-93">
+              <div class="ellipse-33"></div>
+              <div class="product-manager">Product Manager</div>
+            </div>
+          </div>
+          <div class="rectangle-173"></div>
+          <div class="_3-slot3">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-4">
+        <div class="rectangle-104"></div>
+        <div class="content">
+          <div class="rectangle-165"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-64" src="premconsultation/group-63.svg" />
+              <div class="_1502">(150)</div>
+            </div>
+            <div class="group-10">
+              <div class="james-potter">James Potter</div>
+              <div
+                class="james-has-spent-a-decade-protecting-companies-from-cyber-threats"
+              >
+                James has spent a decade protecting companies from cyber threats.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-159"></div>
+              <div class="book-mentor4">Book mentor</div>
+            </div>
+            <div class="group-94">
+              <div class="ellipse-34"></div>
+              <div class="cybersecurity-engineer">Cybersecurity Engineer</div>
+            </div>
+          </div>
+          <div class="rectangle-174"></div>
+          <div class="_3-slot4">3 Slot</div>
+        </div>
+      </div>
+    </div>
+    <div class="mentors2">
+      <div class="mentor-1">
+        <div class="rectangle-10"></div>
+        <div class="content">
+          <div class="rectangle-162"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-65" src="premconsultation/group-64.svg" />
+              <div class="_150">(150)</div>
+            </div>
+            <div class="group-103">
+              <div class="hermione-granger">Hermione Granger</div>
+              <div
+                class="has-designed-interfaces-for-saa-s-products-and-mobile-apps"
+              >
+                Has designed interfaces for SaaS products and mobile apps.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-152"></div>
+              <div class="book-mentor">Book mentor</div>
+            </div>
+            <div class="group-95">
+              <div class="ellipse-3"></div>
+              <div class="ui-ux-designer-researcher">
+                UI/UX Designer &amp; Researcher
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-17"></div>
+          <div class="_3-slot">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-2">
+        <div class="rectangle-102"></div>
+        <div class="content">
+          <div class="rectangle-163"></div>
+          <div class="group-11">
+            <div class="group-72">
+              <img class="group-66" src="premconsultation/group-65.svg" />
+              <div class="_78">(78)</div>
+            </div>
+            <div class="group-10">
+              <div class="voldemort">Voldemort</div>
+              <div
+                class="_9-years-in-cloud-computing-he-navigate-cloud-technologies"
+              >
+                9+ years in cloud computing, He navigate cloud technologies.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-153"></div>
+              <div class="book-mentor2">Book mentor</div>
+            </div>
+            <div class="group-96">
+              <div class="ellipse-32"></div>
+              <div class="cloud-solutions-architect">
+                Cloud Solutions Architect
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-172"></div>
+          <div class="_3-slot2">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-3">
+        <div class="rectangle-103"></div>
+        <div class="content">
+          <div class="rectangle-164"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-67" src="premconsultation/group-66.svg" />
+              <div class="_134">(134)</div>
+            </div>
+            <div class="group-104">
+              <div class="luna-lovegood">Luna Lovegood</div>
+              <div class="specializes-in-organic-growth-and-google-ads">
+                Specializes in organic growth, and Google Ads.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-154"></div>
+              <div class="book-mentor3">Book mentor</div>
+            </div>
+            <div class="group-97">
+              <div class="ellipse-33"></div>
+              <div class="digital-marketing">Digital Marketing</div>
+            </div>
+          </div>
+          <div class="rectangle-173"></div>
+          <div class="_3-slot3">3 Slot</div>
+        </div>
+      </div>
+      <div class="mentor-4">
+        <div class="rectangle-104"></div>
+        <div class="content">
+          <div class="rectangle-165"></div>
+          <div class="group-11">
+            <div class="group-7">
+              <img class="group-68" src="premconsultation/group-67.svg" />
+              <div class="_1502">(150)</div>
+            </div>
+            <div class="group-105">
+              <div class="newt-scamander">Newt Scamander</div>
+              <div
+                class="has-led-engineering-teams-in-building-scalable-applications"
+              >
+                Has led engineering teams in building scalable applications.
+              </div>
+            </div>
+            <div class="group-8">
+              <div class="rectangle-159"></div>
+              <div class="book-mentor4">Book mentor</div>
+            </div>
+            <div class="group-98">
+              <div class="ellipse-34"></div>
+              <div class="full-stack-developer">Full-Stack Developer</div>
+            </div>
+          </div>
+          <div class="rectangle-174"></div>
+          <div class="_3-slot4">3 Slot</div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <div class="button3">
+        <div class="arrow-left">
+          <img class="arrow-left2" src="premconsultation/arrow-left1.svg" />
+        </div>
+      </div>
+      <div class="pages">
+        <div class="pagination2">
+          <div class="_01">01</div>
+        </div>
+        <div class="pagination3">
+          <div class="_012">02</div>
+        </div>
+        <div class="pagination2">
+          <div class="_01">03</div>
+        </div>
+        <div class="pagination4">
+          <div class="_013">04</div>
+        </div>
+        <div class="pagination2">
+          <div class="_01">05</div>
+        </div>
+      </div>
+      <div class="button4">
+        <div class="arrow-right">
+          <img class="arrow-right2" src="premconsultation/arrow-right1.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="adbance-filter">
+      <div class="input-field">
+        <div class="search-by-name-specification">
+          Search by: Name, Specification...
+        </div>
+        <img class="fi-search" src="premconsultation/fi-search0.svg" />
+      </div>
+      <div class="frame-671">
+        <div class="button5">
+          <div class="sliders">
+            <img class="sliders2" src="premconsultation/sliders1.svg" />
+          </div>
+          <div class="primary">Filters</div>
+        </div>
+      </div>
+      <div class="devider"></div>
+    </div>
+    <div class="mentor-headlines">
+      <img class="rectangle-2742" src="premconsultation/rectangle-27420.svg" />
+      <div class="text">
+        <div class="find-your-perfect-mentor-accelerate-your-career">
+          <span>
+            <span class="find-your-perfect-mentor-accelerate-your-career-span">
+              Find Your Perfect Mentor,
+            </span>
+            <span class="find-your-perfect-mentor-accelerate-your-career-span2">
+              Accelerate Your Career
+            </span>
+          </span>
+        </div>
+        <div
+          class="get-personalized-guidance-from-industry-experts-connect-with-mentors-who-can-help-you-sharpen-your-skills-land-your-dream-job-and-grow-professionally"
+        >
+          Get personalized guidance from industry experts. Connect with mentors
+          who can help you sharpen your skills, land your dream job, and grow
+          professionally.
+        </div>
+      </div>
+      <img class="_2" src="premconsultation/_20.png" />
+    </div>
+  </div>
+  
+</body>
+</html>
