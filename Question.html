@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .question-1,
+.question-1 * {
+  box-sizing: border-box;
+}
+.question-1 {
+  background: #ffffff;
+  height: 925px;
+  position: relative;
+  overflow: hidden;
+}
+.refer-to-the-code-snippet-in-the-image-below-what-will-be-the-output-of-this-java-script-function {
+  color: #000000;
+  text-align: center;
+  font-family: var(--inter-bold-32-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-32-font-size, 32px);
+  line-height: var(--inter-bold-32-line-height, 66%);
+  font-weight: var(--inter-bold-32-font-weight, 700);
+  position: absolute;
+  left: 86px;
+  top: 84px;
+  width: 1566px;
+}
+.btn-inactive {
+  background: #d4d1e7;
+  border-radius: 20px;
+  padding: 17px 42px 17px 42px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 232px;
+  height: 94px;
+  position: absolute;
+  left: 1420px;
+  top: 738px;
+}
+.continue {
+  color: #ffffff;
+  text-align: center;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+}
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #d4d1e7;
+  border-width: 1px 0 0 0;
+  width: 1728px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 708px;
+}
+.countdown {
+  width: 114.5px;
+  height: 114.5px;
+  position: absolute;
+  left: 75px;
+  top: 724px;
+}
+.bg {
+  background: #f3f2f9;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: 0%;
+  left: 6.55%;
+  bottom: -93.45%;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.q-1 {
+  background: #ffd707;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: 0%;
+  left: 6.55%;
+  bottom: 0%;
+  top: 6.55%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.q-2 {
+  background: #ffd707;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: -93.45%;
+  left: 100%;
+  bottom: 0%;
+  top: 6.55%;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.q-3 {
+  background: #ffd707;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: -93.45%;
+  left: 100%;
+  bottom: -93.45%;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(180deg) scale(1, 1);
+}
+.rectangle-5 {
+  background: #ffffff;
+  width: 53.28%;
+  height: 53.28%;
+  position: absolute;
+  right: 46.72%;
+  left: 0%;
+  bottom: 46.72%;
+  top: 0%;
+}
+.bg-q {
+  background: #f3f2f9;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: 0%;
+  left: 6.55%;
+  bottom: -93.45%;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.q-4 {
+  background: #ffd707;
+  border-radius: 50%;
+  width: 93.45%;
+  height: 93.45%;
+  position: absolute;
+  right: 0%;
+  left: 6.55%;
+  bottom: -93.45%;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.countdown-number {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 109px;
+  top: 768px;
+}
+.sec {
+  color: #000000;
+  text-align: center;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  width: 34px;
+}
+.rectangle-6 {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #d4d1e7;
+  border-width: 1px;
+  width: 777px;
+  height: 469px;
+  position: absolute;
+  left: 76px;
+  top: 166px;
+}
+.right-answ {
+  width: 770px;
+  height: 95px;
+  position: absolute;
+  left: 882px;
+  top: 166px;
+}
+.rectangle-8 {
+  background: #d4d1e7;
+  border-radius: 20px;
+  width: 99.61%;
+  height: 95.79%;
+  position: absolute;
+  right: 0%;
+  left: 0.39%;
+  bottom: 0%;
+  top: 4.21%;
+}
+.rectangle-7 {
+  background: #ffffff;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #d4d1e7;
+  border-width: 2px;
+  width: 99.61%;
+  height: 95.79%;
+  position: absolute;
+  right: 0.39%;
+  left: 0%;
+  bottom: 4.21%;
+  top: 0%;
+}
+.correct-answer {
+  color: #000000;
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 78.7%;
+  left: 5.06%;
+  width: 16.23%;
+  bottom: 40%;
+  top: 34.74%;
+  height: 25.26%;
+}
+.frame-2 {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #d4d1e7;
+  border-width: 2px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 5.19%;
+  height: 42.11%;
+  position: absolute;
+  right: 4.29%;
+  left: 90.52%;
+  bottom: 30.53%;
+  top: 27.37%;
+}
+._1 {
+  color: #d4d1e7;
+  text-align: center;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.bad-answ {
+  width: 770px;
+  height: 95px;
+  position: absolute;
+  left: 882px;
+  top: 278px;
+}
+.incorrect-answer {
+  color: #000000;
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 70%;
+  left: 5.06%;
+  width: 24.94%;
+  bottom: 40%;
+  top: 34.74%;
+  height: 25.26%;
+}
+.bad-answ2 {
+  width: 770px;
+  height: 95px;
+  position: absolute;
+  left: 882px;
+  top: 390px;
+}
+.incorrect-answer2 {
+  color: #000000;
+  text-align: left;
+  font-family: var(--manrope-bold-20-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-20-font-size, 20px);
+  line-height: var(--manrope-bold-20-line-height, 120%);
+  font-weight: var(--manrope-bold-20-font-weight, 700);
+  position: absolute;
+  right: 67.4%;
+  left: 5.06%;
+  width: 27.53%;
+  bottom: 40%;
+  top: 34.74%;
+  height: 25.26%;
+}
+.illustration {
+  border-radius: 9px;
+  width: 710px;
+  height: 376px;
+  position: absolute;
+  left: 110px;
+  top: 213px;
+  object-fit: cover;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="question-1">
+    <div
+      class="refer-to-the-code-snippet-in-the-image-below-what-will-be-the-output-of-this-java-script-function"
+    >
+      Refer to the code snippet in the image below. What will be the output of
+      this JavaScript function?
+    </div>
+    <div class="btn-inactive">
+      <div class="continue"><a href="Result.html" style="color: white;">Continue</a></div>
+    </div>
+    <div class="line-1"></div>
+    <div class="countdown">
+      <div class="bg"></div>
+      <div class="q-1"></div>
+      <div class="q-2"></div>
+      <div class="q-3"></div>
+      <div class="rectangle-5"></div>
+      <div class="bg-q"></div>
+      <div class="q-4"></div>
+    </div>
+    <div class="countdown-number">
+      <div class="sec">20</div>
+    </div>
+    <div class="rectangle-6"></div>
+    
+    <!-- Jawaban Benar -->
+    <div class="right-answ" onclick="cekJawaban(true)">
+      <div class="rectangle-8"></div>
+      <div class="rectangle-7"></div>
+      <div class="correct-answer">A. Undefined</div>
+      <div class="frame-2"><div class="_1">1</div></div>
+    </div>
+    
+    <!-- Jawaban Salah -->
+    <div class="bad-answ" onclick="cekJawaban(false)">
+      <div class="rectangle-8"></div>
+      <div class="rectangle-7"></div>
+      <div class="incorrect-answer">B. An error message</div>
+      <div class="frame-2"><div class="_1">2</div></div>
+    </div>
+    
+    <div class="bad-answ2" onclick="cekJawaban(false)">
+      <div class="rectangle-8"></div>
+      <div class="rectangle-7"></div>
+      <div class="incorrect-answer2">C. The expected value</div>
+      <div class="frame-2"><div class="_1">3</div></div>
+    </div>
+
+    <script>
+        function cekJawaban(isCorrect) {
+            if (isCorrect) {
+                alert("Jawaban Anda benar!");
+            } else {
+                alert("Jawaban Anda salah, silakan coba lagi!");
+            }
+        }
+    </script>
+    </div>
+    <img class="illustration" src="select/soal1.png" />
+  </div>
+  
+</body>
+</html>

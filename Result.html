@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .result-screen,
+.result-screen * {
+  box-sizing: border-box;
+}
+.result-screen {
+  background: #ffffff;
+  height: 850px;
+  position: relative;
+  overflow: hidden;
+}
+.vector-1 {
+  border-radius: 0px;
+  width: 82px;
+  height: 159px;
+  position: absolute;
+  left: 658.5px;
+  top: 284px;
+  transform: translate(-73.08px, 2.2px);
+  overflow: visible;
+}
+.vector-2 {
+  border-radius: 0px;
+  width: 82px;
+  height: 159px;
+  position: absolute;
+  left: 787.01px;
+  top: 284px;
+  transform: translate(-68.82px, 2.2px);
+  overflow: visible;
+}
+.group-6 {
+  height: auto;
+  position: absolute;
+  left: -136px;
+  top: 447px;
+  overflow: visible;
+}
+.congratulation {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 492px;
+  position: absolute;
+  left: 466px;
+  top: 494px;
+}
+.congratulation2 {
+  color: var(--black, #000000);
+  text-align: center;
+  font-family: var(--inter-bold-64-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-64-font-size, 64px);
+  line-height: var(--inter-bold-64-line-height, 55px);
+  font-weight: var(--inter-bold-64-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.your-result-is {
+  color: var(--black, #000000);
+  text-align: center;
+  font-family: var(--inter-bold-48-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-48-font-size, 48px);
+  line-height: var(--inter-bold-48-line-height, 55px);
+  font-weight: var(--inter-bold-48-font-weight, 700);
+  position: relative;
+}
+._3 {
+  color: var(--black, #000000);
+  text-align: center;
+  font-family: var(--inter-bold-48-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--inter-bold-48-font-size, 48px);
+  line-height: var(--inter-bold-48-line-height, 55px);
+  font-weight: var(--inter-bold-48-font-weight, 700);
+  position: relative;
+}
+._23658184-4-conf-1 {
+  width: 869px;
+  height: 769px;
+  position: absolute;
+  left: -141px;
+  top: -306px;
+  overflow: hidden;
+}
+.group {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+._23658184-4-conf-2 {
+  width: 869px;
+  height: 769px;
+  position: absolute;
+  left: 712px;
+  top: -306px;
+  overflow: hidden;
+}
+.group2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.star-1 {
+  border-radius: 0px;
+  width: 249.47px;
+  height: 249.47px;
+  position: absolute;
+  left: 560px;
+  top: 193.47px;
+  transform: translate(49.87px, -45.6px);
+  overflow: visible;
+}
+.star-2 {
+  border-radius: 0px;
+  width: 107px;
+  height: 106px;
+  position: absolute;
+  left: 669.96px;
+  top: 207.73px;
+  transform: translate(10.72px, 8.62px);
+  overflow: visible;
+}
+.ellipse-3 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #b1cefb;
+  border-width: 8px;
+  width: 146px;
+  height: 146px;
+  position: absolute;
+  left: 649.96px;
+  top: 187.73px;
+}
+.button {
+  width: 252px;
+  height: 75px;
+  position: absolute;
+  left: 594px;
+  top: 677px;
+}
+.vector {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.update {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--manrope-bold-28-font-family, "Manrope-Bold", sans-serif);
+  font-size: var(--manrope-bold-28-font-size, 28px);
+  line-height: var(--manrope-bold-28-line-height, 40px);
+  letter-spacing: var(--manrope-bold-28-letter-spacing, 0.2px);
+  font-weight: var(--manrope-bold-28-font-weight, 700);
+  position: absolute;
+  right: 26.98%;
+  left: 26.19%;
+  width: 46.83%;
+  bottom: 24%;
+  top: 22.67%;
+  height: 53.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="result-screen">
+    <img class="vector-1" src="result/vector-10.svg" />
+    <img class="vector-2" src="result/vector-20.svg" />
+    <img class="group-6" src="result/group-60.svg" />
+    <div class="congratulation">
+      <div class="congratulation2">Congratulation!</div>
+      <div class="frame-3">
+        <div class="your-result-is">Your result is:</div>
+        <div class="_3">3</div>
+        <div class="_3">/ 3</div>
+      </div>
+    </div>
+    <div class="_23658184-4-conf-1">
+      <img class="group" src="result/group0.svg" />
+    </div>
+    <div class="_23658184-4-conf-2">
+      <img class="group2" src="result/group1.svg" />
+    </div>
+    <img class="star-1" src="result/star-10.svg" />
+    <img class="star-2" src="result/star-20.svg" />
+    <div class="ellipse-3"></div>
+    <div class="button">
+      <img class="vector" src="result/vector0.svg" />
+      <div class="update"><a href="AfterTest.html" style="color: white;">Back</a></div>
+    </div>
+  </div>
+  
+</body>
+</html>
